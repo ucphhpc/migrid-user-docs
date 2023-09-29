@@ -3,7 +3,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "migrig-user-docs"
+project = "migrid-user-docs"
 copyright = "2023 ERDA Support Team"
 author = "ERDA Support Team"
 
