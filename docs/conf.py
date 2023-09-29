@@ -3,9 +3,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "migrig-user-docs"
-copyright = "2023 Aputsiak Niels Janussen"
-author = "Aputsiak Niels Janussen"
+project = "migrid-user-docs"
+copyright = "2023 ERDA Support Team"
+author = "ERDA Support Team"
 
 
 # -- General configuration ---------------------------------------------------
