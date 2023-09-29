@@ -14,5 +14,4 @@ User guides for ERDA
    :maxdepth: 2
 
    sections/getting-started/index
-   sections/environments/index
-   sections/jobs/index
+   sections/faq/index
