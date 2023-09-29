@@ -1,5 +1,5 @@
 ========================
-modi-helper-scripts-docs
+migrid-user-docs
 ========================
 
 ---------------
@@ -18,7 +18,7 @@ This is achived by running the following command::
 
 Afterwards, you can now build the docs, with one of the supported targets by executing::
 
-    (venv) machine@distro:~/repos/modi-helper-scripts/doc$ make
+    (venv) machine@distro:~/repos/migrid-user-docs/doc$ make
     Sphinx v4.1.2
     Please use 'make target' where target is one of
     html        to make standalone HTML files
@@ -53,4 +53,4 @@ Publish Documentation
 ---------------------
 
 To publish the defined documentation, simply push the applied change to the `master` branch.
-Readthedocs will then take of rebuilding the `https://modi-helper-scripts.readthedocs.io/` page.
+Readthedocs will then take of rebuilding the `https://migrid-user-docs.readthedocs.io/` page.
