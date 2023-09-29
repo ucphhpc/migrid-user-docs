@@ -1,31 +1,13 @@
 Getting Started
 ===============
 
-If you are working within the MODI platform. The modi-helper-scripts and its associated CLI tools should already be installed and available via the regular Terminal shell.
-You can test this by trying to tab-expand on the "modi-" prefix, which should give your output similar to this::
+We've gathered information about ERDA in a few short intro guides and a more thorough user guide
 
-    $ modi-
-    modi-delete-environment  modi-new-environment     modi-new-job
-
-If you want to install the modi-helper-scripts on your own machine or another platform, you can do so by following the instructions below.
-The modi-helper-scripts can be installed in a number of ways, including:
-
-Via pypi::
-
-    pip install modi-helper-scripts
-
-Via the GitHub repository::
-
-    pip install git+https://github.com/ucphhpc/modi-helper-scripts.git
-
-Or via cloning and installing it yourself::
-
-    git clone https://github.com/ucphhpc/modi-helper-scripts.git
-    cd modi-helper-scripts
-    make install
-
-Either of these methods will install a number of CLI tools, all of which can typically be expanded in a shell environment, given that their installed
-destination directory is included in your current PATH::
-
-    $ modi-
-    modi-delete-environment  modi-new-environment     modi-new-job
+Sign Up Intro for UCPH and external users
+Workgroup Intro about creating, managing and accessing Workgroups
+Network Drive Intro about using ERDA as a network drive on your computer (only covers Windows for now)
+Seafile Intro about Seafile sign up and file synchronization
+Seafile Collaboration Intro about Seafile data sharing and exchange
+ERDA Overview if you're not sure whether to use ERDA's main storage or Seafile
+User Guide with general usage instructions
+We strongly recommend reading and following at least the first intro guide if you want to use ERDA.
