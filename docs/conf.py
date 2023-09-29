@@ -1,11 +1,11 @@
 # Configuration file for the modi-helper-scripts documentation site.
-import sphinx_rtd_theme
+# import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = "modi-helper-scripts"
-copyright = "2023 Rasmus Munk"
-author = "Rasmus Munk"
+project = "migrig-user-docs"
+copyright = "2023 Aputsiak Niels Janussen"
+author = "Aputsiak Niels Janussen"
 
 
 # -- General configuration ---------------------------------------------------
@@ -13,9 +13,9 @@ author = "Rasmus Munk"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    "sphinx_rtd_theme",
-]
+# extensions = [
+#    "sphinx_rtd_theme",
+#]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -31,7 +31,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+# html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
