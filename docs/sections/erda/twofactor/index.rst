@@ -1,5 +1,5 @@
 
-.. _erda_twofactor:
+.. _erda-twofactor:
 
 =========================
 Two-factor Authentication
