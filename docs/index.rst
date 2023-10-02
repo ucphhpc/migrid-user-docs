@@ -43,3 +43,4 @@ Please report any security breaches or vulnerabilities on ERDA as described in `
 
    sections/getting-started/index
    sections/faq/index
+   sections/erda/signup/index
