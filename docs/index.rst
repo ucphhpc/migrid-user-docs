@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ERDA 
+Welcome to MiGrid user guides! 
 ==============================
 
 .. Note::
-   This documentation is currently WIP! Currently focused on the ERDA side of things.
+   This documentation is currently WIP! Currently focused on ERDA.
 
 
 This website contains user guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_.
