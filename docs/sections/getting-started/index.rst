@@ -6,7 +6,7 @@ We have gathered information about `ERDA <https://erda.ku.dk/>`_ and `SIF <https
 that is focused on getting you, the user, started on their journey with these systems and their supported software.
 
 
- * :ref: `erda-signup-start`. 
+ * :ref:`erda-signup-start`. 
 
 * Sign Up Intro for UCPH and external users
 * Workgroup Intro about creating, managing and accessing Workgroups

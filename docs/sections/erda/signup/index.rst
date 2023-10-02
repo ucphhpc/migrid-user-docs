@@ -1,8 +1,8 @@
 .. _erda-signup-start:
 
-====================
+--------------------
 Sign up Guide (ERDA)
-====================
+--------------------
 
 You can sign up to `ERDA <https://erda.ku.dk/>`_ either as a UCPH employee/student (:ref: `erda-signup-ucph`) or an external collaboration partner (:ref: `erda-signup-external`), and you must sign up as a user before you can access ERDA. In addition, you have the option of further protecting your account by logging in with two-factor authentication.
 
@@ -10,7 +10,7 @@ You can sign up to `ERDA <https://erda.ku.dk/>`_ either as a UCPH employee/stude
 .. _erda-signup-ucph:
 
 Sign up with a UCPH account
-===========================
+---------------------------
 
 Go to `ERDA <https://erda.ku.dk/>`_ and click "Sign up".
 
