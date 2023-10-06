@@ -6,7 +6,7 @@ migrid-user-docs
 Getting Started
 ---------------
 
-To build the documentation for `modi-helper-scripts` locally, the requirements defined in `requirements.txt` needs to be installed first.
+To build the documentation for `migrid-user-docs` locally, the requirements defined in `requirements.txt` needs to be installed first.
 This is achived by running the following command::
 
     # Best practice, create a seperate virtual environment
