@@ -6,9 +6,7 @@ We have gathered information about `ERDA <https://erda.ku.dk/>`_ and `SIF <https
 that is focused on getting you, the user, started on their journey with these systems and their supported software.
 
 
- * :ref:`erda-signup-start`. 
-
-* Sign Up Intro for UCPH and external users
+* :ref:`erda-signup-start`. 
 * Workgroup Intro about creating, managing and accessing Workgroups
 * Network Drive Intro about using ERDA as a network drive on your computer (only covers Windows for now)
 * Seafile Intro about Seafile sign up and file synchronization
