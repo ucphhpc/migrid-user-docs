@@ -3,6 +3,22 @@
 Welcome to MiGrid user guides! 
 ==============================
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Get Started
+
+   sections/getting-started/index
+   sections/faq/index
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: ERDA
+
+   sections/erda/signup/index
+   sections/erda/twofactor/index
+
 .. Note::
    This documentation is currently WIP! Currently focused on ERDA.
 
@@ -36,12 +52,3 @@ Questions and Support
 Feel free to contact us using the email `support@erda.dk <mailto:support@erda.dk>`_ for ERDA support or `support@sif.erda.dk <mailto:support@sif.erda.dk>`_ for SIF support in case you have any questions or comments (in English or Danish) not covered by this page. Unfortunately we do not have resources to offer video or phone support, but we typically reply on email within two working days at the latest, and often faster.
 
 Please report any security breaches or vulnerabilities on ERDA as described in `security.txt <https://sif.ku.dk/.well-known/security.txt>`_. 
-
-
-.. toctree::
-   :maxdepth: 2
-
-   sections/getting-started/index
-   sections/faq/index
-   sections/erda/signup/index
-   sections/erda/twofactor/index
