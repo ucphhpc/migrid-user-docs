@@ -18,6 +18,7 @@ Welcome to MiGrid user guides!
 
    sections/erda/signup/index
    sections/erda/twofactor/index
+   sections/erda/workgroup/index
 
 .. Note::
    This documentation is currently WIP! Currently focused on ERDA.
