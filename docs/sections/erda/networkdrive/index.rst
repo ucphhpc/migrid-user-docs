@@ -40,3 +40,27 @@ You have two options for connecting ERDA as network drives:
 
 .. TIP::
    **We recommend SSHFS with SFTP, particularly for users who feel comfortable with the technology and/or who work intensively with their data.**
+
+
+Setup WebDAVS on Windows
+------------------------
+
+WIP
+
+
+Setup WebDAVS on macOS
+----------------------
+
+WIP
+
+
+Setup SSHFS with SFTP on Windows
+--------------------------------
+
+WIP
+
+
+Setup SSHFS with SFTP on macOS
+------------------------------
+
+WIP
