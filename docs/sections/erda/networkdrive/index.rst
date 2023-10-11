@@ -17,7 +17,7 @@ You have two options for connecting ERDA as network drives:
 |                    | Versioning. We add an "S" for secure, as it all runs on a secure        |
 |                    | connection.                                                             |
 |                    |                                                                         |
-|                    |   * Can be used from Windows, Mac and Linux/UNIX                        |
+|                    |   * ✅ Can be used from Windows, Mac and Linux/UNIX                     |
 |                    |   * Easy to get started                                                 |
 |                    |   * Does not require software installation                              |
 |                    |   * Limit on file size - 50 MB as a starting point                      |
