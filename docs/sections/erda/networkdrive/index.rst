@@ -17,23 +17,23 @@ You have two options for connecting ERDA as network drives:
 |                    | Versioning. We add an "S" for secure, as it all runs on a secure        |
 |                    | connection.                                                             |
 |                    |                                                                         |
-|                    |   * ✅ Can be used from Windows, Mac and Linux/UNIX                     |
-|                    |   * Easy to get started                                                 |
-|                    |   * Does not require software installation                              |
-|                    |   * Limit on file size - 50 MB as a starting point                      |
-|                    |   * Sensitive to network outages                                        |
-|                    |   * WebDAVS is less efficient at transferring many and/or large files.  |
+|                    |   ☑ Can be used from Windows, Mac and Linux/UNIX                        |
+|                    |   ☑ Easy to get started                                                 |
+|                    |   ☑ Does not require software installation                              |
+|                    |   𐄂 Limit on file size - 50 MB as a starting point                      |
+|                    |   𐄂 Sensitive to network outages                                        |
+|                    |   𐄂 WebDAVS is less efficient at transferring many and/or large files.  |
 |                    |                                                                         |
 +--------------------+-------------------------------------------------------------------------+
 | 2. SSHFS with SFTP | SSHFS is an abbreviation for Secure Shell File System and is the        |
 |                    | client that connects an SFTP service as a network drive on your         |
 |                    | computer. SFTP is an abbreviation for Secure File Transfer Protocol.    |
 |                    |                                                                         |
-|                    |   * Can be used from Windows, Mac and Linux/UNIX                        |
-|                    |   * Efficient handling of many/large files                              |
-|                    |   * Robust regarding network outages                                    |
-|                    |   * Unlimited file size                                                 |
-|                    |   * You have to install two small programs - once                       |
+|                    |   ☑ Can be used from Windows, Mac and Linux/UNIX                        |
+|                    |   ☑ Efficient handling of many/large files                              |
+|                    |   ☑ Robust regarding network outages                                    |
+|                    |   ☑ Unlimited file size                                                 |
+|                    |   𐄂 You have to install two small programs - once                       |
 |                    |                                                                         |
 +--------------------+-------------------------------------------------------------------------+
 
