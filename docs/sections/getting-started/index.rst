@@ -1,3 +1,5 @@
+.. _getting-started:
+
 ===============
 Getting Started
 ===============
@@ -20,6 +22,7 @@ ERDA
 * ERDA Overview if you're not sure whether to use ERDA's main storage or Seafile
 * User Guide with general usage instructions
 * We strongly recommend reading and following at least the first intro guide if you want to use ERDA.
+
 
 SIF
 ---
