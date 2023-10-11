@@ -1,7 +1,7 @@
 
-==============================
-Welcome to MiGrid user guides! 
-==============================
+===================
+MiGrid: User Guides
+===================
 
 .. toctree::
    :maxdepth: 2
@@ -19,12 +19,13 @@ Welcome to MiGrid user guides!
    sections/erda/signup/index
    sections/erda/twofactor/index
    sections/erda/workgroup/index
+   sections/erda/networkdrive/index
 
 .. Note::
-   This documentation is currently WIP! Currently focused on ERDA.
+   This documentation is WIP! Currently focused on ERDA.
 
 
-This website contains user guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_.
+:100: This website contains user guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ which are the used MiGrid platforms at the University of Copenhagen.
 
 
 About ERDA
@@ -38,7 +39,7 @@ ERDA is delivered by `SCIENCE HPC Center <https://science.ku.dk/english/research
 Sensitive and Personal Data (GDPR)
 ==================================
 
-Please note that while ERDA comes with a strong security focus, it is only a solution approved for general scientific data and not for highly sensitive data. In particular it is not for personal data classified as sensitive in the EU General Data Protection Regulation (GDPR). In case you need to work on such sensitive data we recommend the ERDA sister facility `SIF <https://sif.ku.dk/>`_, which is intended and approved for exactly that purpose.
+Please note that while ERDA comes with a strong security focus, it is only a solution approved for general scientific data and not for highly sensitive data. In particular it is not for personal data classified as sensitive in the EU General Data Protection Regulation (GDPR). In case you need to work on such sensitive data we recommend the ERDA sister facility `SIF <https://sif.ku.dk/>`_, which is intended and approved for exactly that purpose. SIF offers a number of additional security features and functionality that are specifically designed to protect sensitive data.
 
 
 Status and News
