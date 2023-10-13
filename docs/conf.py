@@ -3,9 +3,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "migrid-user-docs"
-copyright = "2023 ERDA Support Team"
-author = "ERDA Support Team"
+project = "MiGrid User Docs"
+copyright = "2023 ERDA/SIF Support Team"
+author = "ERDA/SIF Support Team"
 
 
 # -- General configuration ---------------------------------------------------
@@ -25,6 +25,8 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# HTML logo which will show on top of the sidebar
+html_logo = "/images/MiG-logo.png"
 
 # -- Options for HTML output -------------------------------------------------
 
