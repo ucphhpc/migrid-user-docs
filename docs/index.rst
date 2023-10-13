@@ -25,7 +25,7 @@ MiGrid: User Guides
    This documentation is WIP! Currently focused on ERDA.
 
 
-:100: This website contains user guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ which are the used MiGrid platforms at the University of Copenhagen.
+This website contains user guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ which are the used MiGrid platforms at the University of Copenhagen.
 
 
 About ERDA
