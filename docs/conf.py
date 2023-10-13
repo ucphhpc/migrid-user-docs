@@ -26,7 +26,7 @@ templates_path = ["_templates"]
 exclude_patterns = []
 
 # HTML logo which will show on top of the sidebar
-html_logo = "/images/MiG-logo.png"
+html_logo = "MiG-logo.png"
 
 # -- Options for HTML output -------------------------------------------------
 
