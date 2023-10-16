@@ -25,7 +25,7 @@ You have two options for connecting ERDA as network drives:
 |                    |                                                                         |
 |                    |   ☑ Does not require software installation                              |
 |                    |                                                                         |
-|                    |   𐄂 Limit on file size - 50 MB as a starting point                      |
+|                    |   𐄂 Limit on file size on Windows - 50 MB as a starting point           |
 |                    |                                                                         |
 |                    |   𐄂 Sensitive to network outages                                        |
 |                    |                                                                         |
