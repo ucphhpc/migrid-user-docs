@@ -116,7 +116,7 @@ Microsoft has set a low limit on the size of the files you can download and uplo
 
 This means that you will receive an error message if you open a file from the network drive that is 50 MB or more.
 
-.. LIMIT::
+.. Limit::
    There is technically a way to increase this limit to 4 GB by applying some modifications in the Registry Editor.
    **We do not support this solution and will not be responsible for any consequences of you using this. We strongly suggest that you instead look into using SSHFS.**
 
