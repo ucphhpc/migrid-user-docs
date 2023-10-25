@@ -56,10 +56,12 @@ You have two options for connecting ERDA as network drives:
 .. TIP::
    **We recommend SSHFS with SFTP, particularly for users who feel comfortable with the technology and/or who work intensively with their data.**
 
+.. _erda-networkdrive-wdavs:
 
 Setup WebDAVS on Windows
 ------------------------
 
+.. _erda-networkdrive-wdavssetup:
 
 Setup WebDAVS
 ^^^^^^^^^^^^^
@@ -80,6 +82,7 @@ Once you are done, click on "Save WebDAVS Settings."
 
 AFter that, click on the fold-out menu on "WebDAVS Network Drive", and copy the URL https://io.erda.dk which you will need shortly.
 
+.. _erda-networkdrive-wdavsmap:
 
 Map Network Drive
 ^^^^^^^^^^^^^^^^^
@@ -101,6 +104,7 @@ ERDA is now connected as a network drive with a chosen drive name, and you now h
 .. TIP::
    Your connection will not persist through restarts, so the next time you log into your computer, you need to click on the drive and click "OK" in the popup "Connect to io.erda.dk" if you have previously ticked "Remember my credentials". If not, you need to enter your username and chosen password once again.
 
+.. _erda-networkdrive-wdavsdisc:
 
 Disconnect Network Drive
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,6 +113,7 @@ You can disconnect ERDA as a network drive. We recommend this if you share a com
 
 Right click on the drive, and click on "Disconnect".
 
+.. _erda-networkdrive-wdavsfile:
 
 File size limit of 50 MB
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -123,10 +128,12 @@ This means that you will receive an error message if you open a file from the ne
 
    If you decide to go against our advice, you can find a reference here: `https://www.wintips.org/fix-error-0x800700df-the-file-size-exceeds-the-limit-allowed-and-cannot-be-saved-in-sharepoint-webdav/<https://www.wintips.org/fix-error-0x800700df-the-file-size-exceeds-the-limit-allowed-and-cannot-be-saved-in-sharepoint-webdav/>`_
 
+.. _erda-networkdrive-mdavs:
 
 Setup WebDAVS on macOS
 ----------------------
 
+.. _erda-networkdrive-mdavssetup:
 
 Setup WebDAVS
 ^^^^^^^^^^^^^
@@ -147,6 +154,7 @@ Once you are done, click on "Save WebDAVS Settings."
 
 AFter that, click on the fold-out menu on "WebDAVS Network Drive", and copy the URL https://io.erda.dk which you will need shortly.
 
+.. _erda-networkdrive-mdavsmap:
 
 Map Network Drive
 ^^^^^^^^^^^^^^^^^
@@ -170,6 +178,7 @@ you make are applied directly to the files in ERDA.
 .. TIP::
    Your connection will not persist through restarts, so the next time you log onto your computer, you need to click through the "Go" menu again.
 
+.. _erda-networkdrive-mdavsdisc:
 
 Disconnect Network Drive
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,12 +187,24 @@ You can disconnect ERDA as a network drive, and we recommend this if you share a
 
 Right click on the drive, and click on 'Eject "io.erda.dk"'.
 
+.. _erda-networkdrive-wsftp:
 
 Setup SSHFS with SFTP on Windows
 --------------------------------
 
-WIP
+SFTP is a secure and efficient file transfer protocol similar to the old FTP protocol, but with proper security built in.
+It relies on the security mechanisms of the `OpenSSH <http://www.openssh.com/>`_ suite of applications and it is supported
+by a number of clients on all popular platforms. Some platforms even integrate it natively in the general file manager, so that no extra software is required.
 
+
+.. _erda-networkdrive-wsftpsetup:
+
+Setup SSHFS
+^^^^^^^^^^^
+
+
+
+.. _erda-networkdrive-msftp:
 
 Setup SSHFS with SFTP on macOS
 ------------------------------
