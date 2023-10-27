@@ -22,17 +22,20 @@ MiGrid: User Guides
    sections/erda/networkdrive/index
 
 .. Note::
-   This documentation is WIP! Currently focused on ERDA.
+   This documentation is WIP! We are currently focused on updating our ERDA-related resources.
 
+Welcome!
+   
+This website contains guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_.
 
-This website contains user guides for `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ which are the used MiGrid platforms at the University of Copenhagen.
+To quickly get started, we recommend you check out our :ref:`getting-started` page!
 
 
 About ERDA
 ==========
 
 ERDA (Electronic Research Data Archive) at the University of Copenhagen (KU/UCPH) is meant for storing, sharing, analyzing and archiving research data.
-The intended audience is KU/UCPH employees, their collaboration partners and students. ERDA delivers safe central storage space for own and shared files, interactive analysis tools in addition to archiving for safe-keeping and publishing. You can use ERDA as a secure network drive from anywhere and it also comes with a stand-alone file synchronization service similar to Dropbox, but with the data safely stored locally at UCPH.
+The intended audience is KU/UCPH employees, their collaboration partners and students. ERDA delivers safe central storage space for ones own and shared files, interactive analysis tools in addition to archiving for safe-keeping and publishing. You can use ERDA as a secure network drive from anywhere and it also comes with a stand-alone file synchronization service similar to Dropbox, but with the data safely stored locally at UCPH.
 ERDA is delivered by `SCIENCE HPC Center <https://science.ku.dk/english/research/research-e-infrastructure/science-hpc-centre/>`_ and is formally for the faculty of Science, but others have access mainly for data archiving and publication with UCPH DOIs. A roll-out to all of UCPH is underway to support the general UCPH `Data Management Guidelines <https://kunet.ku.dk/work-areas/research/data/Pages/default.aspx>`_. 
 
 
