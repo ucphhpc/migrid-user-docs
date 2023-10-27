@@ -59,12 +59,12 @@ You have two options for connecting ERDA as network drives:
 .. _erda-networkdrive-wdavs:
 
 Setup WebDAVS on Windows
-------------------------
+========================
 
 .. _erda-networkdrive-wdavssetup:
 
 Setup WebDAVS
-^^^^^^^^^^^^^
+-------------
 
 Start by clicking on the green avatar icon at the bottom left corner on the ERDA webpage, and click on "Setup"
 
