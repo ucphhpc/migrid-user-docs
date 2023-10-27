@@ -1,8 +1,8 @@
 .. _erda-networkdrive-start:
 
-======================================
-Connect ERDA as a Network Drive (ERDA)
-======================================
+===============================
+Connect ERDA as a Network Drive
+===============================
 
 If you are an ERDA user, you can work locally on your computer with your ERDA files by connecting ERDA as a network drive.
 When you make changes to the files via the network drive, the changes are applied directly to the files in ERDA.
@@ -85,7 +85,7 @@ AFter that, click on the fold-out menu on "WebDAVS Network Drive", and copy the 
 .. _erda-networkdrive-wdavsmap:
 
 Map Network Drive
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Click on the File Explorer icon on your computer. Click on "This PC" and from there click on the "Computer" tab.
 In that menu, you need to click on "Map network drive" (as shown below)
@@ -107,7 +107,7 @@ ERDA is now connected as a network drive with a chosen drive name, and you now h
 .. _erda-networkdrive-wdavsdisc:
 
 Disconnect Network Drive
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 You can disconnect ERDA as a network drive. We recommend this if you share a computer with others.
 
@@ -116,7 +116,7 @@ Right click on the drive, and click on "Disconnect".
 .. _erda-networkdrive-wdavsfile:
 
 File size limit of 50 MB
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 Microsoft has set a low limit on the size of the files you can download and upload from WebDAVS locations, which is around 50 MB.
 
@@ -131,12 +131,12 @@ This means that you will receive an error message if you open a file from the ne
 .. _erda-networkdrive-mdavs:
 
 Setup WebDAVS on macOS
-----------------------
+======================
 
 .. _erda-networkdrive-mdavssetup:
 
 Setup WebDAVS
-^^^^^^^^^^^^^
+-------------
 
 Start by clicking on the green avatar icon at the bottom left corner on the ERDA webpage, and click on "Setup"
 
@@ -157,7 +157,7 @@ AFter that, click on the fold-out menu on "WebDAVS Network Drive", and copy the 
 .. _erda-networkdrive-mdavsmap:
 
 Map Network Drive
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Open "Finder" on your computer and navigate to the top to click on "Go", before "Connect to server...".
 
@@ -181,7 +181,7 @@ you make are applied directly to the files in ERDA.
 .. _erda-networkdrive-mdavsdisc:
 
 Disconnect Network Drive
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 You can disconnect ERDA as a network drive, and we recommend this if you share a computer with others.
 
@@ -190,7 +190,7 @@ Right click on the drive, and click on 'Eject "io.erda.dk"'.
 .. _erda-networkdrive-wsftp:
 
 Setup SSHFS with SFTP on Windows
---------------------------------
+================================
 
 SFTP is a secure and efficient file transfer protocol similar to the old FTP protocol, but with proper security built in.
 It relies on the security mechanisms of the `OpenSSH <http://www.openssh.com/>`_ suite of applications and it is supported
@@ -200,13 +200,13 @@ by a number of clients on all popular platforms. Some platforms even integrate i
 .. _erda-networkdrive-wsftpsetup:
 
 Setup SSHFS
-^^^^^^^^^^^
+-----------
 
 
 
 .. _erda-networkdrive-msftp:
 
 Setup SSHFS with SFTP on macOS
-------------------------------
+==============================
 
 WIP
