@@ -41,4 +41,4 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 
 # Favicon for browsertab etcetera
-html_favicon = 'favicon.ico'
+html_favicon = '_static/favicon.ico'
