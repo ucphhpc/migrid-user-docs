@@ -20,6 +20,7 @@ MiGrid: User Guides
    sections/erda/twofactor/index
    sections/erda/workgroup/index
    sections/erda/networkdrive/index
+   sections/erda/seafile/index
 
 .. Note::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.
