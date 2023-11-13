@@ -1,3 +1,4 @@
+
 .. _getting-started:
 
 ===============
@@ -17,7 +18,8 @@ ERDA
 * :ref:`erda-signup-start`
 * :ref:`erda-workgroup-start`
 * :ref:`erda-networkdrive-start`
-* Seafile Intro about Seafile sign up and file synchronization
+* :ref:`erda-seafile-gettingstarted`
+* :ref:`erda-seafile-share`
 * Seafile Collaboration Intro about Seafile data sharing and exchange
 * ERDA Overview if you're not sure whether to use ERDA's main storage or Seafile
 * User Guide with general usage instructions
