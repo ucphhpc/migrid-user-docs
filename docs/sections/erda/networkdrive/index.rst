@@ -126,7 +126,7 @@ This means that you will receive an error message if you open a file from the ne
    There is technically a way to increase this limit to 4 GB by applying some modifications in the Registry Editor.
    **We do not support this solution and will not be responsible for any consequences of you using this. We strongly suggest that you instead look into using SSHFS.**
 
-   If you decide to go against our advice, you can find a reference here: `https://www.wintips.org/fix-error-0x800700df-the-file-size-exceeds-the-limit-allowed-and-cannot-be-saved-in-sharepoint-webdav/<https://www.wintips.org/fix-error-0x800700df-the-file-size-exceeds-the-limit-allowed-and-cannot-be-saved-in-sharepoint-webdav/>`_
+   If you decide to go against our advice, you can find a reference here: `https://www.wintips.org/fix-error-0x800700df-the-file-size-exceeds-the-limit-allowed-and-cannot-be-saved-in-sharepoint-webdav/ <https://www.wintips.org/fix-error-0x800700df-the-file-size-exceeds-the-limit-allowed-and-cannot-be-saved-in-sharepoint-webdav/>`_
 
 .. _erda-networkdrive-mdavs:
 
