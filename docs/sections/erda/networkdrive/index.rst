@@ -63,7 +63,7 @@ You have two options for connecting ERDA as network drives:
    SFTP is an abbreviation for Secure File Transfer Protocol.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
 
    WebDAVS </sections/erda/networkdrive/webdavs/index>
