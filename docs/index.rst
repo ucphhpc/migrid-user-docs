@@ -15,7 +15,6 @@ MiGrid: User Guides
    :caption: ERDA
 
    sections/erda/signup/index
-   sections/erda/twofactor/index
    sections/erda/workgroup/index
    sections/erda/networkdrive/index
    sections/erda/seafile/index
