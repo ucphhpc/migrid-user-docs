@@ -15,7 +15,6 @@ author = "ERDA/SIF Support Team"
 # ones.
 extensions = [
     "sphinx_rtd_theme",
-    'sphinxemoji.sphinxemoji',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
