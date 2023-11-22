@@ -16,6 +16,7 @@ ERDA/SIF: User Guides
 
    sections/erda/signup/index
    sections/erda/workgroup/index
+   sections/erda/jupyter/index
    sections/erda/networkdrive/index
    sections/erda/seafile/index
 

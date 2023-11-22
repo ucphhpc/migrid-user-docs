@@ -20,7 +20,8 @@ ERDA
 * :ref:`erda-networkdrive-start`
 * :ref:`erda-seafile-gettingstarted`
 * :ref:`erda-seafile-share`
-* Seafile Collaboration Intro about Seafile data sharing and exchange
+* :ref:`erda-jupyter-start`
+* `MODI helper scripts <https://modi-helper-scripts.readthedocs.io/en/latest/index.html>`_
 * ERDA Overview if you're not sure whether to use ERDA's main storage or Seafile
 * User Guide with general usage instructions
 * We strongly recommend reading and following at least the first intro guide if you want to use ERDA.
