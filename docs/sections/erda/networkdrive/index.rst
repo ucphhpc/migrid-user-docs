@@ -1,19 +1,19 @@
 Connect ERDA as a Network Drive
 ===============================
 
-If you are an ERDA user, you can work locally on your computer with your ERDA files by connecting ERDA as a network drive for efficient and transparently integrated file access. These interfaces allow you to transfer many or big files more efficiently and to map your ERDA files and folders on your local PC or workstation. This means that when you make changes to the files via the network drive, the changes are applied directly to the files in ERDA.
+As a ERDA user, you can work locally on your computer with your ERDA files by connecting ERDA as a network drive for efficient and transparently integrated file access through different interfaces. These interfaces allow you to transfer  files more efficiently and to map your ERDA files and folders on your local PC or workstation. This means that when you make changes to the files via the network drive, the changes directly applies to the files in ERDA.
 
 
-Network drive access uses a secure connection, and the files are available wherever you are, as long as you have internet access.
+Network drive access uses a secure connection, making the files available everywhere, as long as you have internet access.
 This means that you do *not* need a VPN to work with the files outside UCPH.
 
 
-You have a few options for connecting ERDA as a network drive, but below is a comparison of the two most popular:
+You have several options for connecting ERDA as a network drive, but below is a comparison of the two most popular choices:
 
 +--------------------+-------------------------------------------------------------------------+
 | 1. WebDAVS         | WebDAVS is an abbreviation for Web-based Distributed Authoring          |
 |                    |                                                                         |
-|                    | and Versioning. We add an "S" for secure, as it all runs on a           |
+|                    | and Versioning. A "S" is for secure, as it all runs on a                |
 |                    |                                                                         |
 |                    | secure connection.                                                      |
 |                    |                                                                         |
