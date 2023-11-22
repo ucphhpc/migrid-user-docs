@@ -4,7 +4,7 @@
 ERDA Seafile
 ============
 
-ERDA Seafile is a file/folder synchronisation and data sharing service similar to Dropbox/OneDrive/Google Drive/iCloud - But with the advantage that your data are stored internally and securely at UCPH.
+ERDA Seafile is a file/folder synchronization and data sharing service similar to Dropbox/OneDrive/Google Drive/iCloud - But with the advantage that your data are stored internally and securely at UCPH.
 
 
 .. _erda-seafile-gettingstarted:
@@ -27,9 +27,9 @@ Once on the Seafile login page, you just need to enter your email address and yo
 About libraries
 ===============
 
-Seafile organises your folders and files in "Libraries". This is a logical collection of folders and files that makes them easier to manage and optionally share with others. You can create a new library by clicking "New Library" before being prompted to write a descriptive title before you can finally click "Submit". In this prompt, you can choose to tick "Encrypt" and create a separate encryption password, and the data within will automatically be encrypted before being saved centrally.
+Seafile organizes your folders and files in "Libraries". This is a logical collection of folders and files that makes them easier to manage and optionally share with others. You can create a new library by clicking "New Library" before being prompted to write a descriptive title before you can finally click "Submit". In this prompt, you can choose to tick "Encrypt" and create a separate encryption password, and the data within will automatically be encrypted before being saved centrally.
 
-In your new library, you can manually upload files and folders that you want to synchronise or share by clicking "Upload" and selecting said files and folders.
+In your new library, you can manually upload files and folders that you want to synchronize or share by clicking "Upload" and selecting said files and folders.
 
 You can also install the Seafile client and use it to enter data automatically from your computer, as we will discuss in the next section.
 
@@ -41,7 +41,7 @@ Seafile Client
 Install Seafile Client
 ----------------------
 
-To synchronise Seafile Library data with your computer, you can download and install the Seafile client. This can be installed on as many computers as you like. You can find a link to `Seafile Client <https://www.seafile.com/en/download/>`_ either on the bottom of the Seafile page, or by clicking on the link in this section. On the page, click on the client that is relevant for you.
+To synchronize Seafile Library data with your computer, you can download and install the Seafile client. This can be installed on as many computers as you like. You can find a link to `Seafile Client <https://www.seafile.com/en/download/>`_ either on the bottom of the Seafile page, or by clicking on the link in this section. On the page, click on the client that is relevant for you.
 
 
 Tips for installation on a UCPH computer
@@ -56,34 +56,34 @@ Set up Seafile Client
 
 During the installation process, you will be requested to "Add an account", where, among other information, you must fill in the field "Server" and "Username", which you can find on your Seafile Setup page on the :ref:`erda-homepage-start`.
 
-On the SEtup page, you need to click "proceed" with the client set up and it will give you your personal server address and username. Copy what the instructions state in the fields "Server" and "Username", and insert the information in the respective fields in the below pop-up window with "Add an Account" on the Seafile Client.
+On the Setup page, you need to click "proceed" with the client set up and it will give you your personal server address and username. Copy what the instructions state in the fields "Server" and "Username", and insert the information in the respective fields in the below pop-up window with "Add an Account" on the Seafile Client.
 
 Once the client has been installed, you will find a small Seafile icon in your system tray.
 
 
 .. _erda-seafile-synch:
-Synchronise Files
+Synchronize Files
 -----------------
 
-In order to synchronise files, you can click on the orange icon in your system tray to open and manage your Seafile client.
+In order to synchronize files, you can click on the orange icon in your system tray to open and manage your Seafile client.
 
-Right-click your Seafile client in the library you want to synchronise. In the example below, a library has been set up with the title "Project e-infrastructure", and you must click the "Sync this library" button to make it manually synchronise.
+Right-click your Seafile client in the library you want to synchronize. In the example below, a library has been set up with the title "Project e-infrastructure", and you must click the "Sync this library" button to make it manually synchronize.
 
 .. image:: /images/seafile/seafile-sync.png
 
-You may be prompted to select which path on your hard drive to synchronise to. Choose this before clicking "OK".
+You may be prompted to select which path on your hard drive to synchronize to. Choose this before clicking "OK".
 
 .. INFO::
-   When the synchronisation of a library is initiated, the cloud icon will change to show the progress, and the cloud will turn green once the process is complete. This is also visible from within the Seafile client.
+   When the synchronization of a library is initiated, the cloud icon will change to show the progress, and the cloud will turn green once the process is complete. This is also visible from within the Seafile client.
 
 
 .. _erda-seafile-share:
 Exchange or share data with others
 ==================================
 
-You can easily and quickly exchange data - a whole library, a folder or a specific file - using Share Link. The Share Link method is good for one-off exchanges of data with others or with collaboration partners who are not ERDA or ERDA Seafile users. With Share Link, you can, in fact, share data with arbitrary recipients. i.e. the recipients does not need to have an ERDA Seafil account.
+You can easily and quickly exchange data - a whole library, a folder or a specific file - using Share Link. The Share Link method is good for one-off exchanges of data with others or with collaboration partners who are not ERDA or ERDA Seafile users. With Share Link, you can, in fact, share data with arbitrary recipients. i.e. the recipients does not need to have an ERDA Seafile account.
 
-This procedure is the same, whether you want to share a library, folder, or file. In the example below, a file is shared via Share Lnik.
+This procedure is the same, whether you want to share a library, folder, or file. In the example below, a file is shared via Share Link.
 
 Click on the library in which the file is stored
 
@@ -177,7 +177,7 @@ Receive data from others with "Upload link"
 
 With "Upload Link", you can invite arbitrary acquaintances or collaboration partners to upload files or folders directly to a selected location in your Seafile Library. The method does not require the recipient to have an ERDA Seafile account.
 
-The given exmaple is in order to allow the upload to a folder.
+The given example is in order to allow the upload to a folder.
 
 IF you hold the cursor above the specific folder in which you want to receive data from others, you can click on the "Share" icon, and click "Upload Link".
 
@@ -208,6 +208,6 @@ Click on the recycle icon "Trash" to retrieve deleted files or libraries.
 View library history
 --------------------
 
-Open your library and lclick on the clock icon "History"
+Open your library and click on the clock icon "History"
 
 .. image:: /images/seafile-seafile-libraryhistory.png
