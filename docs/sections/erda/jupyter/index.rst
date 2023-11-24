@@ -6,37 +6,22 @@ ERDA integrates a set of `Jupyter <https://jupyter.org/>`_ services, which can b
 
 To get access to these services, click the **Jupyter** button in the navigation menu on the ERDA homepage. Upon clicking it, you are presented with a page where you can select either DAG or MODI.
 
-.. _erda-jupyter-dag:
-DAG
----
-
-Data Analysis Gateway or DAG is a service which provides a set of interactive data analysis nodes for intermediate computation, which can be completed in a short time frame.
-This means that any spawned instance is limited to 2 hours of inactivity before it will be terminated. DAG instances have access to 8 compute threads/cores and 16GB of memory.
-
-The spawned instances are non-persistent, meaning that any change made during a session is lost once the server is terminated.
-The only exception to this is the data that is saved in the provided mount directory (i.e. ~/work).
-
-For more information about how you can ease the task of configuring your instances and our future roadmap for allowing customization, check out the FAQ section "How do I install and run software XYZ in Jupyter?" at our :ref:`faq` or check DAG's dedicated page linked below.
-
 ⏩️ :doc:`DAG </sections/erda/jupyter/dag/index>`
-
-.. _erda-jupyter-modi:
-MODI
-----
-
-MPI Oriented Development and Investigation or MODI provides a cluster of 8 compute nodes that can be utilized for long running batch jobs.
-Each node offers dual AMD EPYC 32-core CPUs and 256GB of memory. Nodes are connected with a 25Gbit network providing RoCE for efficient communication.
-The system is configured as a SLURM cluster so that regular SLURM commands like sbatch, squeue, sinfo and friends should be used to schedule and monitor your programs running as batch jobs.
-
-The current setup does not at the moment support interactive functionalities such as srun and similar.
-
-Please refer to the MODI page linked below for details about using MODI.
+    Data Analysis Gateway or DAG is a service which provides a set of interactive data analysis nodes for intermediate computation, which can be completed in a short time frame.
+    This means that any spawned instance is limited to 2 hours of inactivity before it will be terminated. DAG instances have access to 8 compute threads/cores and 16 GB of memory.
+    The spawned instances are non-persistent, meaning that any change made during a session is lost once the server is terminated.
+    The only exception to this is the data that is saved in the provided mount directory (i.e. ~/work).
 
 ⏩️ :doc:`MODI </sections/erda/jupyter/modi/index>`
+    MPI Oriented Development and Investigation or MODI provides a cluster of 8 compute nodes that can be utilized for long running batch jobs.
+    Each node offers dual AMD EPYC 32-core CPUs and 256GB of memory. Nodes are connected with a 25Gbit network providing RoCE for efficient communication.
+    The system is configured as a SLURM cluster so that regular SLURM commands like sbatch, squeue, sinfo and friends should be used to schedule and monitor
+    your programs running as batch jobs.
+
+    The current setup does not at the moment support interactive functionalities such as srun and similar.
 
 .. IMPORTANT::
    It's particularly important to pay attention to the part about running sbatch commands using the shared modi_mount directory for jobs to succeed.
-
 
 .. toctree::
    :maxdepth: 3
