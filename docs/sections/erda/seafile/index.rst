@@ -5,7 +5,15 @@ ERDA Seafile
 ============
 
 ERDA Seafile is a file/folder synchronization and data sharing service similar to Dropbox/OneDrive/Google Drive/iCloud - But with the advantage that your data are stored internally and securely at UCPH.
+Seafile provides sharing capabilities which can be used to share data with internals and externals, and in that context it is left to the users to adhere to rules and regulations about confidentiality and
+sensitive private data.
 
+.. NOTE:
+   All data are sent through a secure connection to the ERDA storage,
+   and users can additionally choose to have their synchronized data encrypted locally before ever
+   sending it over the network to the storage. This means that data are significantly better protected
+   against eavesdropping by strangers. The optional encryption is done with the AES 256 algorithm,
+   which 'Datatilsynet' and other authorities define as a suitable algorithm for strong encryption.
 
 .. _erda-seafile-gettingstarted:
 Getting Started with Seafile
