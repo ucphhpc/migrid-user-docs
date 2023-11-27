@@ -21,7 +21,7 @@ First of all, make sure that this guide is handy, as you will have to restart yo
 
 After that, press the power button and hold it down until the "Loading setup options" text is shown. Click on "Options", then on "Continue". Select your user if you are asked to do so, and click "next". Input your computer's password when prompted.
 
-After getting into the menu, click on the "Utilities" button up on the topor similar button, before clicking on the "Startup Security Utility" button. Select your main system if you have several, and click "Unlock..." if prompted. Then. click on "Security Policy...". In this menu, you have to tick the "Reduced Security" rather than "Full Security", and tick the "Allow user management of kernel extensions from identified developers", click OK afterwards.
+After getting into the menu, click on the "Utilities" button up on the top or similar button, before clicking on the "Startup Security Utility" button. Select your main system if you have several, and click "Unlock..." if prompted. Then. click on "Security Policy...". In this menu, you have to tick the "Reduced Security" rather than "Full Security", and tick the "Allow user management of kernel extensions from identified developers", click OK afterwards.
 
 You have now enabled kernel extensions, and can proceed with the main guide. Click on the Apple logo in the top-left to restart your computer.
 

@@ -11,7 +11,7 @@ by a number of clients on all popular platforms. Some platforms even integrate i
 
 Setup SSHFS
 -----------
-To setup SSHFS, go onto the ERDA user homepage, and press the avat icon in the bottom left corner, and then on "Setup".
+To setup SSHFS, go onto the ERDA user homepage, and press the avatar icon in the bottom left corner, and then on "Setup".
 
 Click on the "SFTP" tab, and either create a new, separate password for your SFTP access in the field under "Password" or add your public key if you prefer that way. If you choose the password route, the password must consist of at least eight characters and contain a combination of lowercase and uppercase letters, numbers, and special characters (at least three out of the four types mentioned).
 
@@ -34,7 +34,7 @@ To install without Winget, you first click on the `WinFsp <https://github.com/wi
 
 Click on either of the two buttons under Download, or click the link under the installation section, and pick either the x64 or x86 depending on your computer's architecture.
 
-If you are unsure about your computer's architecture, oyu can find it under Start -> Settings -> System -> About
+If you are unsure about your computer's architecture, you can find it under Start -> Settings -> System -> About
 
 .. image:: /images/networkdrive/networkdrive-about.png
 
@@ -46,9 +46,9 @@ Tips for installing on a UCPH computer
 
 On a standard UCPH computer (B machine), you have access to installing programs by clicking "Request administrator access" in the bottom right corner.
 
-.. image:: /iamges/networkdrive/networkdrive-ucphcomp.png
+.. image:: /images/networkdrive/networkdrive-ucphcomp.png
 
-If you have a spcieal, secure UCPH computer (A machine), you need to contact UCPH IT to install the two programs.
+If you have a special, secure UCPH computer (A machine), you need to contact UCPH IT to install the two programs.
 
 
 .. _erda-networkdrive-wsftpmapdrive:

@@ -1,9 +1,9 @@
 SSHFS
 =====
 
-SSHFS is a kind of network drive which is supported on Microsoft Windows, MacOS and Linux. SSHFS uses SSH/SFTP connections underneath, so it inherits a number of the advantages like efficiencty plus network robustness from there, and is supported directly with ERDA SFTP.
+SSHFS is a kind of network drive which is supported on Microsoft Windows, MacOS and Linux. SSHFS uses SSH/SFTP connections underneath, so it inherits a number of the advantages like efficiency plus network robustness from there, and is supported directly with ERDA SFTP.
 
-Below, you can find user guides on how to setup SSHFS with SFTP for both Windows and MacOS. If you are interested in a file synchronisation service resembling Dropbox, but which you are permitted to use as a KU Employee, then you can also check out Seafile, also linked below. 
+Below, you can find user guides on how to setup SSHFS with SFTP for both Windows and MacOS. If you are interested in a file synchronization service resembling Dropbox, but which you are permitted to use as a KU/UCPH Employee, then you can also check out Seafile, also linked below. 
 
 
 ⏩️ :doc:`Setup SSHFS with SFTP on Windows </sections/erda/networkdrive/sshfs/windows>`
