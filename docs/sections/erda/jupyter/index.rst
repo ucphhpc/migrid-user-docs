@@ -7,13 +7,13 @@ ERDA integrates a set of `Jupyter <https://jupyter.org/>`_ services, which can b
 To get access to these services, click the **Jupyter** button in the navigation menu on the ERDA homepage. Upon clicking it, you are presented with a page where you can select either DAG or MODI.
 
 ⏩️ :doc:`DAG </sections/erda/jupyter/dag/index>`
-    Data Analysis Gateway or DAG is a service which provides a set of interactive data analysis nodes for intermediate computation, which can be completed in a short time frame.
+    Data Analysis Gateway (DAG) is a service which provides a set of interactive data analysis nodes for intermediate computation, which can be completed in a short time frame.
     This means that any spawned instance is limited to 2 hours of inactivity before it will be terminated. DAG instances have access to 8 compute threads/cores and 16 GB of memory.
     The spawned instances are non-persistent, meaning that any change made during a session is lost once the server is terminated.
     The only exception to this is the data that is saved in the provided mount directory (i.e. ~/work).
 
 ⏩️ :doc:`MODI </sections/erda/jupyter/modi/index>`
-    MPI Oriented Development and Investigation or MODI provides a cluster of 8 compute nodes that can be utilized for long running batch jobs.
+    MPI Oriented Development and Investigation (MODI) provides a cluster of 8 compute nodes that can be utilized for long running batch jobs.
     Each node offers dual AMD EPYC 32-core CPUs and 256GB of memory. Nodes are connected with a 25Gbit network providing RoCE for efficient communication.
     The system is configured as a SLURM cluster so that regular SLURM commands like sbatch, squeue, sinfo and friends should be used to schedule and monitor
     your programs running as batch jobs.
