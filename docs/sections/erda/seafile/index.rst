@@ -107,7 +107,7 @@ You can further secure the Share Link exchange with a password and an expiry dat
 
 You can then click "Send", where you will be prompted to write the email addresses of the recipient(s). You can optionally write a short message in the "Message" field, before finally clicking "Send" once again
 
-.. image:: /image/seafile/seafile-sendmessage.png
+.. image:: /images/seafile/seafile-sendmessage.png
 
 An email will be sent to the selected recipients containing a link to the selected file.
 
