@@ -339,6 +339,7 @@ In these examples, the tardis package is installed and afterwards executed
    ~/modi_mount/tardis/run_tardis.sh
 
 Or
+
 .. code-block::
    
    #!/bin/bash
@@ -369,6 +370,7 @@ A more complex example of installing custom packages can be seen in the two exam
 Here we install the deeplabcut package, which we subsequently execute as a defined Notebook with the papermill package.
 This is useful because papermill allows you to execute your existing Notebooks in a SLURM job.
 Furthermore, the second example below also highlights how you can customize whether the conda environment you aim to activate already exists or not
+
 .. code-block::
    
    #!/bin/bash
@@ -376,6 +378,7 @@ Furthermore, the second example below also highlights how you can customize whet
    ~/modi_mount/deeplabcut/run_deeplabcut.sh
 
 Example two
+
 .. code-block::
    
    #!/bin/bash
@@ -423,12 +426,14 @@ SLURM Hello World Job
 First we will get a range of nodes to output the string ”Hello World” to an output file.
 The first example will get a single node to accomplish this.
 Starting in your home directory i.e. in the Jupyter Terminal
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:/some/other/directory/path$ cd
    wlp630_ku_dk@669ffda64cbc:~$
 
 In this location you have the mentioned directories
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~$ ls -l
@@ -438,6 +443,7 @@ In this location you have the mentioned directories
    drwxr-xr-x. 2 wlp630_ku_dk users 4096 May 27 12:08 modi_mount
 
 To make our life easy in terms of managing where the output should be produced, we will move into the ``~/modi_mount`` directory and create the ``hello_world.sh`` jobfile
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~$ cd modi_mount
@@ -446,6 +452,7 @@ To make our life easy in terms of managing where the output should be produced, 
    echo "Hello World"
 
 In the same location, run the following command to submit the file as a SLURM job to be executed by a now
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~/modi_mount$ sbatch hello_world.sh
@@ -455,6 +462,7 @@ After this, there will immediately be an output file with a default name of ``sl
 Initially, this will have a size of 0 bytes and have zero content.
 However, as the job produces stdout strings they will be appended into this file.
 In this instance, this should produce the following
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat \
@@ -463,6 +471,7 @@ In this instance, this should produce the following
 
 This was produced by one of the n00[0-7] nodes as highlighted in :ref:`erda-jupyter-slurm-gettingstarted`.
 To get information on which node executed the job, we can execute the system provided hostname command to retrieve this, e.g
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~/modi_mount$ vi echo_hostname.sh
@@ -470,6 +479,7 @@ To get information on which node executed the job, we can execute the system pro
    hostname
 
 If we resubmit and retrieve the result, we should get
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat \
@@ -480,6 +490,7 @@ Additionally, if we want to specify how many nodes that should be allocated to t
 However, as indicated in the below example, the ``sbatch`` command is only responsible for allocation of nodes to the job and will not launch additional tasks per node.
 Instead, the ``srun`` command is responsible for doing this, and as shown in the second example below this text we need to prepend the task with the ``srun`` command.
 This will execute the command on the additional allocated nodes to the particular job
+
 .. code-block::
    
    wlp630_ku_dk@d89000877b60:~/modi_mount$ sbatch -N 8 echo_hostname.sh
@@ -489,6 +500,7 @@ This will execute the command on the additional allocated nodes to the particula
    n00{MODI_NODE_NUMBER}
 
 Second example
+
 .. code-block::
    
    wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat echo_hostname.sh
@@ -517,6 +529,7 @@ SLURM Job with Apptainer
 
 To begin with, we will submit a basic job as in the :ref:`erda-jupyter-modi-examples-hw` example, but in this instance we will execute the binary inside a Apptainer runtime environment.
 An example of this can be seen below
+
 .. code-block::
    
    wlp630_ku_dk@adc3f840e849:~/modi_mount$ vi hello_world.sh
@@ -532,6 +545,7 @@ An example of this can be seen below
 Here, the ``echo ”Hello World”`` command is executed within the environment provided by the ``~/modi_images/slurm-notebook-latest.sif`` image.
 
 The difference here can be further illustrated by retrieving the operating system that the image provides, as shown below
+
 .. code-block::
    
    wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat os_release.sh
@@ -576,7 +590,8 @@ Meaning, that if the dependencies are provided by the ucphhpc/slurm-notebook ima
 For instance, if we want to test the simple C Hello World MPI program (shown below) by executing it within the ucphhpc/slurm-notebook image, we can simply attempt to compile and execute it within the notebook terminal in a spawned Slurm Notebook on MODI as shown below the code example.
 
 main.c example
-.. code-block:: C
+
+.. code-block:: 
    
    # include < stdio .h >
    # include < mpi .h >
@@ -600,6 +615,7 @@ main.c example
    }
 
 Test main.c support
+
 .. code-block::
    
    # Figure out if the required non standard header file mpi.h
@@ -624,6 +640,7 @@ Test main.c support
 As the output shows in the above support example, the ucphhpc/slurm-notebook image is able to both compile and execute the main.c program on MODI.
 This means that we should be able to execute it across the SLURM nodes by replicating the approach in :ref:`erda-jupyter-modi-examples-sjwa`.
 Namely, creating and submitting a SLURM job script as shown below
+
 .. code-block::
    
    # First move the binary into the ~/modi_mount directory
@@ -676,12 +693,14 @@ Therefore, it is best to use prebuilt versions when testing your application to 
 An example of how the prebuilt image can be downloaded via either Docker or Apptainer can be seen in the two examples below. Further explanations and documentation on these commands can be found at `Docker <https://docs.docker.com/engine/reference/commandline/pull/>`_ and `Apptainer <https://apptainer.org/documentation/>`_.
 
 Docker pull image to your own machine
+
 .. code-block::
    
    # Docker pull
    docker pull ucphhpc/slurm-notebook
 
 Apptainer pull image to your own machine
+
 .. code-block::
    
    # Apptainer pull
@@ -692,6 +711,7 @@ Upon having the particular image prepared, the next steps include spawning a bas
 Examples of this can be seen below.
 
 Docker mount and execute program
+
 .. code-block::
    
    # Start an image environment and mount the source mpi_test
@@ -723,6 +743,7 @@ Docker mount and execute program
    Hello world from processor feb0bd58b791, rank 0 out of 1 processors
 
 Apptainer mount and execute program
+
 .. code-block::
    
    # Start a bash shell within the container image environement
