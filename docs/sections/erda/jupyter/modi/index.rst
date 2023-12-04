@@ -83,7 +83,28 @@ This can be verified by executing an ``ls ~/erda_mount`` which will produce a li
 The mount itself is provided by ERDA's standard SSHFS support, therefore the I/O rate is limited by the bandwidth available between the MODI and ERDA systems.
 This means that at any point in time the access speed can fluctuate depending on the current usage. A quick test of this is shown below with a single measured contemporary rate of 46.9 MB/s write and 69.8 MB/s read.
 
-.. image:: /images/jupyter/modi-emount.png
+.. code-block::
+
+   # write test
+   wlp630_ku_dk@d89000877b60: ~/erda_mount$ time \
+       dd if=/dev/zero of=~/erda_mount/write_test bs=1M count=2000
+   2000+0 records in
+   2000+0 records out
+   2097152000 bytes (2.1 GB, 2.0 GiB) copied, 44.7334 s, 46.9 MB/s
+   real 0m44.847s
+   user 0m0.008s
+   sys 0m2.328s
+
+   # Read test
+   wlp630_ku_dk@d89000877b60:~/erda_mount$ time \
+       dd if=~/erda_mount/write_test of=/tmp/read_test bs=1M count=2000
+   2000+0 records in
+   2000+0 records out
+   2097152000 bytes (2.1 GB, 2.0 GiB) copied, 30.0353 s, 69.8 MB/s
+   real 0m30.275s
+   user 0m0.002s
+   sys 0m3.599s
+
 
 
 .. _erda-jupyter-special-images:
