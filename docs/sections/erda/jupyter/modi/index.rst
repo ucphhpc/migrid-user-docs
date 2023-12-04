@@ -106,7 +106,6 @@ This means that at any point in time the access speed can fluctuate depending on
    sys 0m3.599s
 
 
-
 .. _erda-jupyter-special-images:
 modi_images
 ^^^^^^^^^^^
@@ -157,30 +156,31 @@ Other possible node states include ``down*``, ``draining*``, ``drained*``, ``fai
 A full account of the ``sinfo`` options and outputs, including individual state explanations can be found at `sinfo <https://slurm.schedmd.com/sinfo.html>`_.
 If a particular node ever gets stuck in an unavailable state such as ``down*`` or ``fail``, please raise the issue as instructed in :ref:`erda-jupyter-modi-support`.
 
-``sinfo`` output::
-  wlp630_ku_dk@adc3f840e849:~$ sinfo
-  PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
-  modi_devel* up 20:00 8 idle n[000-007]
-  modi_short up 2-00:00:00 8 idle n[000-007]
-  modi_long up 7-00:00:00 8 idle n[000-007]
-  # Request job resources
-  wlp630_ku_dk@adc3f840e849:~$ salloc
-  salloc: Granted job allocation {JOB_ID_NUMBER}
-  wlp630_ku_dk@348bdb8f3a56:~$ sinfo
-  PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
-  modi_devel* up 20:00 1 mix n000
-  modi_devel* up 20:00 7 idle n[001-007]
-  modi_short up 2-00:00:00 1 mix n000
-  modi_short up 2-00:00:00 7 idle n[001-007]
-  modi_long up 7-00:00:00 1 mix n000
-  modi_long up 7-00:00:00 7 idle n[001-007]
-  # Cancel job allocation to release node
-  wlp630_ku_dk@adc3f840e849:~$ scancel {JOB_ID_NUMBER}
-  wlp630_ku_dk@adc3f840e849:~$ sinfo
-  PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
-  modi_devel* up 20:00 8 idle n[000-007]
-  modi_short up 2-00:00:00 8 idle n[000-007]
-  modi_long up 7-00:00:00 8 idle n[000-007]
+.. code-block::
+
+   wlp630_ku_dk@adc3f840e849:~$ sinfo
+   PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
+   modi_devel* up 20:00 8 idle n[000-007]
+   modi_short up 2-00:00:00 8 idle n[000-007]
+   modi_long up 7-00:00:00 8 idle n[000-007]
+   # Request job resources
+   wlp630_ku_dk@adc3f840e849:~$ salloc
+   salloc: Granted job allocation {JOB_ID_NUMBER}
+   wlp630_ku_dk@348bdb8f3a56:~$ sinfo
+   PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
+   modi_devel* up 20:00 1 mix n000
+   modi_devel* up 20:00 7 idle n[001-007]
+   modi_short up 2-00:00:00 1 mix n000
+   modi_short up 2-00:00:00 7 idle n[001-007]
+   modi_long up 7-00:00:00 1 mix n000
+   modi_long up 7-00:00:00 7 idle n[001-007]
+   # Cancel job allocation to release node
+   wlp630_ku_dk@adc3f840e849:~$ scancel {JOB_ID_NUMBER}
+   wlp630_ku_dk@adc3f840e849:~$ sinfo
+   PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
+   modi_devel* up 20:00 8 idle n[000-007]
+   modi_short up 2-00:00:00 8 idle n[000-007]
+   modi_long up 7-00:00:00 8 idle n[000-007]
 
 
 .. _erda-jupyter-slurm-gettingstarted-wir:
@@ -196,52 +196,53 @@ From this, a call to squeue shows what we expect, i.e. that six nodes (n[000-005
 To utilize these last nodes, three similar jobs are scheduled.
 The final call to squeue then illustrates the inevitable, that the first of the last three jobs (Job 3) is correctly running on the n[006-007].modi nodes, and that the two additional jobs are currently in a Pending state where they are either awaiting Resources to be available (Job 5) or a higher Priority job has to be scheduled before it can claim job resources (Job 4).
 
-queue and sinfo usage::
-  wlp630_ku_dk@adc3f840e849:~$ squeue
-  JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
-  wlp630_ku_dk@adc3f840e849:~$ squeue
-  # Submit a number of MPI jobs to allocate every node
-  # A single node can process 64 tasks at a time
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
-  -N 2 --ntasks 128 slurm_job.sh
-  Submitted batch job 1
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
-  -N 4 --ntasks 256 slurm_job.sh
-  Submitted batch job 2
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ squeue
-  JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
-  2 modi_deve slurm_jo wlp630_k R 0:02 4 n[002-005]
-  1 modi_deve slurm_jo wlp630_k R 0:22 2 n[000-001]
-  # Node overview
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sinfo
-  PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
-  modi_devel* up 20:00 6 alloc modi[000-005]
-  modi_devel* up 20:00 2 idle n[006-007]
-  modi_short up 2-00:00:00 6 alloc n[000-005]
-  modi_short up 2-00:00:00 2 idle n[006-007]
-  modi_long up 7-00:00:00 6 alloc n[000-005]
-  modi_long up 7-00:00:00 2 idle n[006-007]
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
-  -N 2 --ntasks 128 slurm_job.sh
-  Submitted batch job 3
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
-  -N 2 --ntasks 128 slurm_job.sh
-  Submitted batch job 4
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
-  -N 2 --ntasks 128 slurm_job.sh
-  Submitted batch job 5
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ squeue
-  JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
-  5 modi_deve slurm_jo wlp630_k PD 0:00 2 (Resources)
-  4 modi_deve slurm_jo wlp630_k PD 0:00 2 (Priority)
-  3 modi_deve slurm_jo wlp630_k R 0:03 2 n[006-007]
-  2 modi_deve slurm_jo wlp630_k R 0:35 4 n[002-005]
-  1 modi_deve slurm_jo wlp630_k R 0:55 2 n[000-001]
-  wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sinfo
-  PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
-  modi_devel* up 20:00 8 alloc n[000-007]
-  modi_short up 2-00:00:00 8 alloc n[000-007]
-  modi_long up 7-00:00:00 8 alloc n[000-007]
+.. code-block::
+   
+   wlp630_ku_dk@adc3f840e849:~$ squeue
+   JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
+   wlp630_ku_dk@adc3f840e849:~$ squeue
+   # Submit a number of MPI jobs to allocate every node
+   # A single node can process 64 tasks at a time
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
+       -N 2 --ntasks 128 slurm_job.sh
+   Submitted batch job 1
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
+       -N 4 --ntasks 256 slurm_job.sh
+   Submitted batch job 2
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ squeue
+   JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
+   2 modi_deve slurm_jo wlp630_k R 0:02 4 n[002-005]
+   1 modi_deve slurm_jo wlp630_k R 0:22 2 n[000-001]
+   # Node overview
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sinfo
+   PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
+   modi_devel* up 20:00 6 alloc modi[000-005]
+   modi_devel* up 20:00 2 idle n[006-007]
+   modi_short up 2-00:00:00 6 alloc n[000-005]
+   modi_short up 2-00:00:00 2 idle n[006-007]
+   modi_long up 7-00:00:00 6 alloc n[000-005]
+   modi_long up 7-00:00:00 2 idle n[006-007]
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
+       -N 2 --ntasks 128 slurm_job.sh
+   Submitted batch job 3
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
+       -N 2 --ntasks 128 slurm_job.sh
+   Submitted batch job 4
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sbatch \
+       -N 2 --ntasks 128 slurm_job.sh
+   Submitted batch job 5
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ squeue
+   JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
+   5 modi_deve slurm_jo wlp630_k PD 0:00 2 (Resources)
+   4 modi_deve slurm_jo wlp630_k PD 0:00 2 (Priority)
+   3 modi_deve slurm_jo wlp630_k R 0:03 2 n[006-007]
+   2 modi_deve slurm_jo wlp630_k R 0:35 4 n[002-005]
+   1 modi_deve slurm_jo wlp630_k R 0:55 2 n[000-001]
+   wlp630_ku_dk@348bdb8f3a56:~/modi_mount/module4/ShallowWater$ sinfo
+   PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
+   modi_devel* up 20:00 8 alloc n[000-007]
+   modi_short up 2-00:00:00 8 alloc n[000-007]
+   modi_long up 7-00:00:00 8 alloc n[000-007]
 
 Additional information and explanations about the possible output and states can be found at `squeue <https://slurm.schedmd.com/squeue.html>`_.
 Furthermore, basic examples of how to configure and submit simple bash or MPI based job scripts can be found in :ref:`erda-jupyter-modi-examples`.
@@ -252,35 +253,44 @@ Selecting a Partition
 ^^^^^^^^^^^^^^^^^^^^^
 
 As shown in :ref:`erda-jupyter-slurm-gettingstarted-wir`, you can get an overview of the available partitions and their current state by using the ``sinfo`` command.
-An example of this can be seen below::
-  wlp630_ku_dk@6155c12973e5:~$ sinfo
-  PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
-  modi_devel* up 15:00 1 mix n000
-  modi_devel* up 15:00 7 idle n[001-007]
-  modi_short up 2-00:00:00 1 mix n000
-  modi_short up 2-00:00:00 7 idle n[001-007]
-  modi_long up 7-00:00:00 1 mix n000
-  modi_long up 7-00:00:00 7 idle n[001-007]
-  modi_max up 31-00:00:0 1 mix n000
-  modi_max up 31-00:00:0 7 idle n[001-007]
+An example of this can be seen below
 
+.. code-block::
+   
+   wlp630_ku_dk@6155c12973e5:~$ sinfo
+   PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
+   modi_devel* up 15:00 1 mix n000
+   modi_devel* up 15:00 7 idle n[001-007]
+   modi_short up 2-00:00:00 1 mix n000
+   modi_short up 2-00:00:00 7 idle n[001-007]
+   modi_long up 7-00:00:00 1 mix n000
+   modi_long up 7-00:00:00 7 idle n[001-007]
+   modi_max up 31-00:00:0 1 mix n000
+   modi_max up 31-00:00:0 7 idle n[001-007]
+
+   
 This information can then be used to specify which of the partitions your particular job should be executed in.
 When using `sbatch <https://slurm.schedmd.com/sbatch.html>`_ on the commandline, ``–partition/-p`` can be used.
-An example of how this can be used to execute a job on the ``modi_short`` partition can be seen below::
-  wlp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ sbatch \
-  --partition modi_short slurm_job.sh
-  Submitted batch job 2083
-  wlp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ squeue
-  JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
-  2083 modi_shor slurm_jo wlp630_k R 0:00 1 n000
-  609 modi_shor run.sh zsk578_a R 16:55 1 n000
+An example of how this can be used to execute a job on the ``modi_short`` partition can be seen below
+
+.. code-block::
+   
+   wlp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ sbatch \
+       --partition modi_short slurm_job.sh
+   Submitted batch job 2083
+   wlp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ squeue
+   JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
+   2083 modi_shor slurm_jo wlp630_k R 0:00 1 n000
+   609 modi_shor run.sh zsk578_a R 16:55 1 n000
 
 Another way to specify the partition, is to specify it inside the script that is executed with `sbatch <https://slurm.schedmd.com/sbatch.html>`_.
-An example of this can be seen below::
-  lp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ cat slurm_job.sh
-  #!/bin/bash
-  #SBATCH --partition=modi_short
-  srun ~/modi_mount/python_hello_world/run.sh
+An example of this can be seen below
+
+.. code-block::
+   lp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ cat slurm_job.sh
+   #!/bin/bash
+   #SBATCH --partition=modi_short
+   srun ~/modi_mount/python_hello_world/run.sh
 
 
 .. _erda-jupyter-apptainer:
@@ -320,71 +330,80 @@ To avoid this turning into a spaghetti structure, and maintaining sanity, we rec
 The first being a script that defines which Singularity image and path to the second script that defines the installation and job execution.
 An example of the two script structure and how they can be executed can be seen in the two examples below.
 
-In these examples, the tardis package is installed and afterwards executed::
-  #!/bin/bash
-  $srun apptainer exec ~/modi_images/hpc-notebook-latest.sif \
-  ~/modi_mount/tardis/run_tardis.sh
+In these examples, the tardis package is installed and afterwards executed
 
-Or::
-  #!/bin/bash
-  # Defines where the package should be installed.
-  # Since the modi_mount directory content is
-  # available on each node, we define the package(s) to be installed
-  # here so that the node can find it once the job is being executed.
-  export CONDA_PKGS_DIRS=~/modi_mount/conda_dir
-  # Activate conda in your PATH
-  # This ensures that we discover every conda environment
-  # before we try to activate it.
-  source $CONDA_DIR/etc/profile.d/conda.sh
-  # As per https://tardis-sn.github.io/tardis/installation.html
-  # We download and install the tardis environment
-  wget https://raw.githubusercontent.com/tardis-sn \
-  /tardis/master/tardis_env3.yml
-  conda env create -f tardis_env3.yml
-  conda activate tardis
-  # Afterwards we clone and install the tardis package itself
-  # If supported, this could also have been a regular pip install
-  git clone https://github.com/tardis-sn/tardis.git
-  cd tardis
-  python setup.py install
-  # Run your application in the current directory
-  python3 tardis_app.py
+.. code-block::
+   
+   #!/bin/bash
+   $srun apptainer exec ~/modi_images/hpc-notebook-latest.sif \
+   ~/modi_mount/tardis/run_tardis.sh
+
+Or
+.. code-block::
+   
+   #!/bin/bash
+   # Defines where the package should be installed.
+   # Since the modi_mount directory content is
+   # available on each node, we define the package(s) to be installed
+   # here so that the node can find it once the job is being executed.
+   export CONDA_PKGS_DIRS=~/modi_mount/conda_dir
+   # Activate conda in your PATH
+   # This ensures that we discover every conda environment
+   # before we try to activate it.
+   source $CONDA_DIR/etc/profile.d/conda.sh
+   # As per https://tardis-sn.github.io/tardis/installation.html
+   # We download and install the tardis environment
+   wget https://raw.githubusercontent.com/tardis-sn \
+       /tardis/master/tardis_env3.yml
+   conda env create -f tardis_env3.yml
+   conda activate tardis
+   # Afterwards we clone and install the tardis package itself
+   # If supported, this could also have been a regular pip install
+   git clone https://github.com/tardis-sn/tardis.git
+   cd tardis
+   python setup.py install
+   # Run your application in the current directory
+   python3 tardis_app.py
 
 A more complex example of installing custom packages can be seen in the two examples further down.
 Here we install the deeplabcut package, which we subsequently execute as a defined Notebook with the papermill package.
 This is useful because papermill allows you to execute your existing Notebooks in a SLURM job.
-Furthermore, the second example below also highlights how you can customize whether the conda environment you aim to activate already exists or not::
-  #!/bin/bash
-  apptainer exec ~/modi_images/hpc-notebook-latest.sif \
-  ~/modi_mount/deeplabcut/run_deeplabcut.sh
+Furthermore, the second example below also highlights how you can customize whether the conda environment you aim to activate already exists or not
+.. code-block::
+   
+   #!/bin/bash
+   apptainer exec ~/modi_images/hpc-notebook-latest.sif \
+   ~/modi_mount/deeplabcut/run_deeplabcut.sh
 
-Example two::
-  #!/bin/bash
-  # Defines where the package should be installed.
-  # Since the modi_mount directory content is
-  # available on each node, we define the package(s) to be installed
-  # here so that the node can find it once the job is being executed.
-  export CONDA_PKGS_DIRS=~/modi_mount/conda_dir
-  # Activate conda in your PATH
-  # This ensures that we discover every conda environment
-  # before we try to activate it.
-  source $CONDA_DIR/etc/profile.d/conda.sh
-  # Either activate the existing environment
-  # or create a new one
-  conda activate DLC
-  if [ $? != 0 ]; then
-  conda create -n DLC -y python=3.8
-  conda activate DLC
-  fi
-  # Install the packages into the conda environment that was
-  activated.
-  pip3 install -q deeplabcut==2.2rc3 tensorflow papermill ipykernel
-  # Ensure that the Jupyter kernel is available for papermill.
-  python3 -m ipykernel install --user --name=DLC
-  # Transform and execute the deeplabcut.ipynb notebook
-  # in the created kernel and put the results in
-  # the deeplabcut.result.ipynb output file
-  papermill -k DLC deeplabcut.ipynb deeplabcut.result.ipynb
+Example two
+.. code-block::
+   
+   #!/bin/bash
+   # Defines where the package should be installed.
+   # Since the modi_mount directory content is
+   # available on each node, we define the package(s) to be installed
+   # here so that the node can find it once the job is being executed.
+   export CONDA_PKGS_DIRS=~/modi_mount/conda_dir
+   # Activate conda in your PATH
+   # This ensures that we discover every conda environment
+   # before we try to activate it.
+   source $CONDA_DIR/etc/profile.d/conda.sh
+   # Either activate the existing environment
+   # or create a new one
+   conda activate DLC
+   if [ $? != 0 ]; then
+       conda create -n DLC -y python=3.8
+       conda activate DLC
+       fi
+   # Install the packages into the conda environment that was
+   activated.
+   pip3 install -q deeplabcut==2.2rc3 tensorflow papermill ipykernel
+   # Ensure that the Jupyter kernel is available for papermill.
+   python3 -m ipykernel install --user --name=DLC
+   # Transform and execute the deeplabcut.ipynb notebook
+   # in the created kernel and put the results in
+   # the deeplabcut.result.ipynb output file
+   papermill -k DLC deeplabcut.ipynb deeplabcut.result.ipynb
 
 To execute either of these two examples, the ‘slurm job.sh‘ has to be submitted to the SLURM queue via the ``sbatch`` command as highlighted in the :ref:`erda-jupyter-modi-examples-hw` example.
 
@@ -403,73 +422,91 @@ SLURM Hello World Job
 
 First we will get a range of nodes to output the string ”Hello World” to an output file.
 The first example will get a single node to accomplish this.
-Starting in your home directory i.e. in the Jupyter Terminal::
-  wlp630_ku_dk@669ffda64cbc:/some/other/directory/path$ cd
-  wlp630_ku_dk@669ffda64cbc:~$
+Starting in your home directory i.e. in the Jupyter Terminal
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:/some/other/directory/path$ cd
+   wlp630_ku_dk@669ffda64cbc:~$
 
-In this location you have the mentioned directories::
-  wlp630_ku_dk@669ffda64cbc:~$ ls -l
-  total 8
-  drwxr-xr-x. 1 501 501 4096 May 27 10:51 erda_mount
-  drwxr-xr-x. 4 root root 102 May 25 11:07 modi_images
-  drwxr-xr-x. 2 wlp630_ku_dk users 4096 May 27 12:08 modi_mount
+In this location you have the mentioned directories
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~$ ls -l
+   total 8
+   drwxr-xr-x. 1 501 501 4096 May 27 10:51 erda_mount
+   drwxr-xr-x. 4 root root 102 May 25 11:07 modi_images
+   drwxr-xr-x. 2 wlp630_ku_dk users 4096 May 27 12:08 modi_mount
 
-To make our life easy in terms of managing where the output should be produced, we will move into the ``~/modi_mount`` directory and create the ``hello_world.sh`` jobfile::
-  wlp630_ku_dk@669ffda64cbc:~$ cd modi_mount
-  wlp630_ku_dk@669ffda64cbc:~/modi_mount$ vi hello_world.sh
-  #!/bin/bash
-  echo "Hello World"
+To make our life easy in terms of managing where the output should be produced, we will move into the ``~/modi_mount`` directory and create the ``hello_world.sh`` jobfile
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~$ cd modi_mount
+   wlp630_ku_dk@669ffda64cbc:~/modi_mount$ vi hello_world.sh
+   #!/bin/bash
+   echo "Hello World"
 
-In the same location, run the following command to submit the file as a SLURM job to be executed by a now::
-  wlp630_ku_dk@669ffda64cbc:~/modi_mount$ sbatch hello_world.sh
-  Submitted batch job {JOB_ID_NUMBER}
+In the same location, run the following command to submit the file as a SLURM job to be executed by a now
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~/modi_mount$ sbatch hello_world.sh
+   Submitted batch job {JOB_ID_NUMBER}
 
 After this, there will immediately be an output file with a default name of ``slurm-{JOB_ID_NUMBER}`` present in the same directory as from which you executed the sbatch command.
 Initially, this will have a size of 0 bytes and have zero content.
 However, as the job produces stdout strings they will be appended into this file.
-In this instance, this should produce the following::
-  wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat \
-  slurm-{JOB_ID_NUMBER}.out
-  Hello World
+In this instance, this should produce the following
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat \
+   slurm-{JOB_ID_NUMBER}.out
+   Hello World
 
 This was produced by one of the n00[0-7] nodes as highlighted in :ref:`erda-jupyter-slurm-gettingstarted`.
-To get information on which node executed the job, we can execute the system provided hostname command to retrieve this, e.g::
-  wlp630_ku_dk@669ffda64cbc:~/modi_mount$ vi echo_hostname.sh
-  #!/bin/bash
-  hostname
+To get information on which node executed the job, we can execute the system provided hostname command to retrieve this, e.g
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~/modi_mount$ vi echo_hostname.sh
+   #!/bin/bash
+   hostname
 
-If we resubmit and retrieve the result, we should get::
-  wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat \
-  slurm-{JOB_ID_NUMBER}.out
-  n00{MODI_NODE_NUMBER}
+If we resubmit and retrieve the result, we should get
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat \
+   slurm-{JOB_ID_NUMBER}.out
+   n00{MODI_NODE_NUMBER}
 
 Additionally, if we want to specify how many nodes that should be allocated to this job, the ``-N`` flag can used.
 However, as indicated in the below example, the ``sbatch`` command is only responsible for allocation of nodes to the job and will not launch additional tasks per node.
 Instead, the ``srun`` command is responsible for doing this, and as shown in the second example below this text we need to prepend the task with the ``srun`` command.
-This will execute the command on the additional allocated nodes to the particular job::
-  wlp630_ku_dk@d89000877b60:~/modi_mount$ sbatch -N 8 echo_hostname.sh
-  Submitted batch job {JOB_ID_NUMBER}
-  wlp630_ku_dk@d89000877b60:~/modi_mount$ cat \
-  slurm-{JOB_ID_NUMBER}.out
-  n00{MODI_NODE_NUMBER}
+This will execute the command on the additional allocated nodes to the particular job
+.. code-block::
+   
+   wlp630_ku_dk@d89000877b60:~/modi_mount$ sbatch -N 8 echo_hostname.sh
+   Submitted batch job {JOB_ID_NUMBER}
+   wlp630_ku_dk@d89000877b60:~/modi_mount$ cat \
+   slurm-{JOB_ID_NUMBER}.out
+   n00{MODI_NODE_NUMBER}
 
-Second example::
-  wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat echo_hostname.sh
-  #!/bin/bash
-  srun hostname
-  wlp630_ku_dk@d89000877b60:~/modi_mount$ sbatch -N 8 \
-  echo_hostname.sh
-  Submitted batch job {JOB_ID_NUMBER}
-  wlp630_ku_dk@d89000877b60:~/modi_mount$ cat \
-  slurm-{JOB_ID_NUMBER}.out
-  n000
-  n001
-  n004
-  n002
-  n006
-  n005
-  n007
-  n003
+Second example
+.. code-block::
+   
+   wlp630_ku_dk@669ffda64cbc:~/modi_mount$ cat echo_hostname.sh
+   #!/bin/bash
+   srun hostname
+   wlp630_ku_dk@d89000877b60:~/modi_mount$ sbatch -N 8 \
+   echo_hostname.sh
+   Submitted batch job {JOB_ID_NUMBER}
+   wlp630_ku_dk@d89000877b60:~/modi_mount$ cat \
+   slurm-{JOB_ID_NUMBER}.out
+   n000
+   n001
+   n004
+   n002
+   n006
+   n005
+   n007
+   n003
 
 Please refer to the `sbatch man page <https://slurm.schedmd.com/sbatch.html>`_ and `srun man page <https://slurm.schedmd.com/srun.html>`_ man pages for further information about available flags and options.
 
@@ -479,41 +516,45 @@ SLURM Job with Apptainer
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 To begin with, we will submit a basic job as in the :ref:`erda-jupyter-modi-examples-hw` example, but in this instance we will execute the binary inside a Apptainer runtime environment.
-An example of this can be seen below::
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ vi hello_world.sh
-  #!/bin/bash
-  apptainer exec ~/modi_images/slurm-notebook-latest.sif \
-  echo "Hello World"
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ sbatch hello_world.sh
-  Submitted batch job {JOB_ID_NUMBER}
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat \
-  slurm-{JOB_ID_NUMBER}.out
-  Hello World
+An example of this can be seen below
+.. code-block::
+   
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ vi hello_world.sh
+   #!/bin/bash
+   apptainer exec ~/modi_images/slurm-notebook-latest.sif \
+   echo "Hello World"
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ sbatch hello_world.sh
+   Submitted batch job {JOB_ID_NUMBER}
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat \
+   slurm-{JOB_ID_NUMBER}.out
+   Hello World
 
 Here, the ``echo ”Hello World”`` command is executed within the environment provided by the ``~/modi_images/slurm-notebook-latest.sif`` image.
 
-The difference here can be further illustrated by retrieving the operating system that the image provides, as shown below::
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat os_release.sh
-  #!/bin/bash
-  apptainer exec ~/modi_images/slurm-notebook-latest.sif \
-  cat /etc/os-release
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ sbatch os_release.sh
-  Submitted batch job {JOB_ID_NUMBER}
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat \
-  slurm-{JOB_ID_NUMBER}.out
-  NAME="Ubuntu"
-  VERSION="18.04.1 LTS (Bionic Beaver)"
-  ID=ubuntu
-  ID_LIKE=debian
-  PRETTY_NAME="Ubuntu 18.04.1 LTS"
-  VERSION_ID="18.04"
-  HOME_URL="https://www.ubuntu.com/"
-  SUPPORT_URL="https://help.ubuntu.com/"
-  BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-  PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/
-  terms-and-policies/privacy-policy"
-  VERSION_CODENAME=bionic
-  UBUNTU_CODENAME=bionic
+The difference here can be further illustrated by retrieving the operating system that the image provides, as shown below
+.. code-block::
+   
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat os_release.sh
+   #!/bin/bash
+   apptainer exec ~/modi_images/slurm-notebook-latest.sif \
+   cat /etc/os-release
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ sbatch os_release.sh
+   Submitted batch job {JOB_ID_NUMBER}
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat \
+   slurm-{JOB_ID_NUMBER}.out
+   NAME="Ubuntu"
+   VERSION="18.04.1 LTS (Bionic Beaver)"
+   ID=ubuntu
+   ID_LIKE=debian
+   PRETTY_NAME="Ubuntu 18.04.1 LTS"
+   VERSION_ID="18.04"
+   HOME_URL="https://www.ubuntu.com/"
+   SUPPORT_URL="https://help.ubuntu.com/"
+   BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+   PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/
+   terms-and-policies/privacy-policy"
+   VERSION_CODENAME=bionic
+   UBUNTU_CODENAME=bionic
   
 We can see that instead of being the native ”NAME=”Rocky Linux” OS, we are now executing inside an Ubuntu environment.
 The reason for this difference is that the images we provide inherit the base configuration from the official Jupyter team’s images, which uses the Ubuntu distribution for images.
@@ -534,78 +575,84 @@ Furthermore, in relation to shared library dependencies, it is also recommended 
 Meaning, that if the dependencies are provided by the ucphhpc/slurm-notebook image (which is therefore used for the job execution), it is recommended that the compilation of the program takes place in the same MODI notebook image.
 For instance, if we want to test the simple C Hello World MPI program (shown below) by executing it within the ucphhpc/slurm-notebook image, we can simply attempt to compile and execute it within the notebook terminal in a spawned Slurm Notebook on MODI as shown below the code example.
 
-main.c example::
-  # include < stdio .h >
-  # include < mpi .h >
-  int main ( int argc , char ** argv ) {
-      MPI_Init (& argc , & argv ) ;
-      // setup size
-      int world_size ;
-      MPI_Comm_size ( MPI_COMM_WORLD , & world_size ) ;
-      // setup rank
-      int world_rank ;
-      MPI_Comm_rank ( MPI_COMM_WORLD , & world_rank ) ;
-      // get name
-      char processor_name [ MPI_MAX_PROCESSOR_NAME ];
-      int name_len ;
-      MPI_Get_processor_name ( processor_name , & name_len ) ;
-      // output combined id
-      printf ( " Hello world from processor %s , "
-               " rank % d out of % d processors \ n " ,
+main.c example
+.. code-block:: C
+   
+   # include < stdio .h >
+   # include < mpi .h >
+   int main ( int argc , char ** argv ) {
+                MPI_Init (& argc , & argv ) ;
+                // setup size
+                int world_size ;
+                MPI_Comm_size ( MPI_COMM_WORLD , & world_size ) ;
+                // setup rank
+                int world_rank ;
+                MPI_Comm_rank ( MPI_COMM_WORLD , & world_rank ) ;
+                // get name
+                char processor_name [ MPI_MAX_PROCESSOR_NAME ];
+                int name_len ;
+                MPI_Get_processor_name ( processor_name , & name_len ) ;
+                // output combined id
+                printf ( " Hello world from processor %s , "
+                " rank % d out of % d processors \ n " ,
                processor_name , world_rank , world_size ) ;
-      MPI_Finalize () ;
-  }
+               MPI_Finalize () ;
+   }
 
-Test main.c support::
-  # Figure out if the required non standard header file mpi.h
-  # is present in the image
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ find /usr \
-      -type f \
-      -name mpi.h \
-      /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h \
-      | grep include/mpi.h
-  # Compile the main.c source in ~/
-  # with both including the required header
-  # and link against the shared library libmpi.so
-  wlp630_ku_dk@adc3f840e849:~$ gcc main.c \
-      -I/usr/lib/x86_64-linux-gnu/openmpi/include \
-      -L/usr/lib/x86_64-linux-gnu/openmpi/lib \
-      -lmpi \
-      -o main
-  # Execute the output file
-  wlp630_ku_dk@adc3f840e849:~$ ./main
-  Hello world from processor adc3f840e849, rank 0 out of 1 processors
+Test main.c support
+.. code-block::
+   
+   # Figure out if the required non standard header file mpi.h
+   # is present in the image
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ find /usr \
+       -type f \
+       -name mpi.h \
+       /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h \
+       | grep include/mpi.h
+   # Compile the main.c source in ~/
+   # with both including the required header
+   # and link against the shared library libmpi.so
+   wlp630_ku_dk@adc3f840e849:~$ gcc main.c \
+       -I/usr/lib/x86_64-linux-gnu/openmpi/include \
+       -L/usr/lib/x86_64-linux-gnu/openmpi/lib \
+       -lmpi \
+       -o main
+   # Execute the output file
+   wlp630_ku_dk@adc3f840e849:~$ ./main
+   Hello world from processor adc3f840e849, rank 0 out of 1 processors
 
 As the output shows in the above support example, the ucphhpc/slurm-notebook image is able to both compile and execute the main.c program on MODI.
 This means that we should be able to execute it across the SLURM nodes by replicating the approach in :ref:`erda-jupyter-modi-examples-sjwa`.
-Namely, creating and submitting a SLURM job script as shown below::
-  # First move the binary into the ~/modi_mount directory
-  # so the SLURM nodes will have access to it.
-  wlp630_ku_dk@adc3f840e849:~$ mv main modi_mount/
-  # Create job script file
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ vi job.sh
-  #!/bin/bash
-  apptainer exec ~/modi_images/slurm-notebook-latest.sif \
-      ./main
-  # Schedule 10 tasks on each node
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ sbatch -N 8 --tasks 80 job.sh
-  Submitted batch job {JOB_ID_NUMBER}
-  # Check queue
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ squeue
-  JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
-  {JOB_ID_NUMBER} modi job.sh wlp630_k R 0:00 8 modi[000-007]
-  wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat \
-      slurm-{JOB_ID_NUMBER}.out
-  ...
-  Hello world from processor n000, rank 4 out of 80 processors
-  Hello world from processor n001, rank 10 out of 80 processors
-  Hello world from processor n002, rank 22 out of 80 processors
-  Hello world from processor n003, rank 31 out of 80 processors
-  Hello world from processor n004, rank 41 out of 80 processors
-  Hello world from processor n005, rank 51 out of 80 processors
-  Hello world from processor n006, rank 63 out of 80 processors
-  Hello world from processor n007, rank 73 out of 80 processors
-  ...
+Namely, creating and submitting a SLURM job script as shown below
+.. code-block::
+   
+   # First move the binary into the ~/modi_mount directory
+   # so the SLURM nodes will have access to it.
+   wlp630_ku_dk@adc3f840e849:~$ mv main modi_mount/
+   # Create job script file
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ vi job.sh
+   #!/bin/bash
+   apptainer exec ~/modi_images/slurm-notebook-latest.sif \
+       ./main
+   # Schedule 10 tasks on each node
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ sbatch -N 8 --tasks 80 job.sh
+   Submitted batch job {JOB_ID_NUMBER}
+   # Check queue
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ squeue
+   JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON)
+   {JOB_ID_NUMBER} modi job.sh wlp630_k R 0:00 8 modi[000-007]
+   wlp630_ku_dk@adc3f840e849:~/modi_mount$ cat \
+       slurm-{JOB_ID_NUMBER}.out
+   ...
+   Hello world from processor n000, rank 4 out of 80 processors
+   Hello world from processor n001, rank 10 out of 80 processors
+   Hello world from processor n002, rank 22 out of 80 processors
+   Hello world from processor n003, rank 31 out of 80 processors
+   Hello world from processor n004, rank 41 out of 80 processors
+   Hello world from processor n005, rank 51 out of 80 processors
+   Hello world from processor n006, rank 63 out of 80 processors
+   Hello world from processor n007, rank 73 out of 80 processors
+   ...
 
 From the result we can see that the program was successfully executed within the image on each of the nodes.
 
@@ -628,64 +675,72 @@ Therefore, it is best to use prebuilt versions when testing your application to 
 
 An example of how the prebuilt image can be downloaded via either Docker or Apptainer can be seen in the two examples below. Further explanations and documentation on these commands can be found at `Docker <https://docs.docker.com/engine/reference/commandline/pull/>`_ and `Apptainer <https://apptainer.org/documentation/>`_.
 
-Docker pull image to your own machine::
-  # Docker pull
-  docker pull ucphhpc/slurm-notebook
+Docker pull image to your own machine
+.. code-block::
+   
+   # Docker pull
+   docker pull ucphhpc/slurm-notebook
 
-Apptainer pull image to your own machine::
-  # Apptainer pull
-  apptainer pull docker://ucphhpc/slurm-notebook
+Apptainer pull image to your own machine
+.. code-block::
+   
+   # Apptainer pull
+   apptainer pull docker://ucphhpc/slurm-notebook
   
 Upon having the particular image prepared, the next steps include spawning a bash shell inside the image environment, mounting the application source that is to be tested within the environment, optionally compiling the source into a binary, and executing the prepared program.
 
 Examples of this can be seen below.
 
-Docker mount and execute program::
-  # Start an image environment and mount the source mpi_test
-  # directory into the /root/ path and change the workdir to /root
-  docker run -w /root -it \
-      --mount type=bind,src=$(pwd)/mpi_test,dst=/root/mpi_test \
-      ucphhpc/slurm-notebook bash
-  # List directories within the image’s /root path
-  root@dfb16d84c340:/root# ls
-  mpi_test
-  # Change to the mpi_test directory
-  root@feb0bd58b791:/root# cd mpi_test/
-  # Since it’s a C source we need to compile it and attempt to execute it
-  root@feb0bd58b791:/root/mpi_test# gcc main.c -o main
-  main.c:4:10: fatal error: mpi.h: No such file or directory
-  #include <mpi.h>
-  ^~~~~~~
-  compilation terminated.
+Docker mount and execute program
+.. code-block::
+   
+   # Start an image environment and mount the source mpi_test
+   # directory into the /root/ path and change the workdir to /root
+   docker run -w /root -it \
+       --mount type=bind,src=$(pwd)/mpi_test,dst=/root/mpi_test \
+       ucphhpc/slurm-notebook bash
+   # List directories within the image’s /root path
+   root@dfb16d84c340:/root# ls
+   mpi_test
+   # Change to the mpi_test directory
+   root@feb0bd58b791:/root# cd mpi_test/
+   # Since it’s a C source we need to compile it and attempt to execute it
+   root@feb0bd58b791:/root/mpi_test# gcc main.c -o main
+   main.c:4:10: fatal error: mpi.h: No such file or directory
+   #include <mpi.h>
+   ^~~~~~~
+   compilation terminated.
 
-  # Since we can’t find the header file from the default path,
-  # we can try and search for it in the system.
-  root@feb0bd58b791:/root/mpi_test# find / -type f -name mpi.h
-  /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
-  # Include the header and link the shared mpi library
-  root@feb0bd58b791:/root/mpi_test# gcc main.c \
-  -I/usr/lib/x86_64-linux-gnu/openmpi/include -lmpi -o main
-  # Execute binary
-  root@feb0bd58b791:/root/mpi_test# ./main
-  Hello world from processor feb0bd58b791, rank 0 out of 1 processors
+   # Since we can’t find the header file from the default path,
+   # we can try and search for it in the system.
+   root@feb0bd58b791:/root/mpi_test# find / -type f -name mpi.h
+   /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
+   # Include the header and link the shared mpi library
+   root@feb0bd58b791:/root/mpi_test# gcc main.c \
+   -I/usr/lib/x86_64-linux-gnu/openmpi/include -lmpi -o main
+   # Execute binary
+   root@feb0bd58b791:/root/mpi_test# ./main
+   Hello world from processor feb0bd58b791, rank 0 out of 1 processors
 
-Apptainer mount and execute program::
-  # Start a bash shell within the container image environement
-  # Since with Apptainer you share the filesystem with the
-  # actual host, you simply need to spawn the shell from the location
-  # of the mpi_test directory
-  root@hostname:~# apptainer exec slurm-notebook-latest.sif bash
-  # List the directories from the current location
-  # Here the mpi_test directory should be included
-  root@hostname:~# ls
-  mpi_test
-  # Next follow the same steps as in Listing 19
-  root@hostname:~/mpi_test# cd mpi_test/
-  root@hostname:~/mpi_test# gcc main.c \
-      -I/usr/lib/x86_64-linux-gnu/openmpi/include -lmpi -o main
-  # Execute binary
-  root@hostname:~/mpi_test# ./main
-  Hello world from processor hostname, rank 0 out of 1 processor.
+Apptainer mount and execute program
+.. code-block::
+   
+   # Start a bash shell within the container image environement
+   # Since with Apptainer you share the filesystem with the
+   # actual host, you simply need to spawn the shell from the location
+   # of the mpi_test directory
+   root@hostname:~# apptainer exec slurm-notebook-latest.sif bash
+   # List the directories from the current location
+   # Here the mpi_test directory should be included
+   root@hostname:~# ls
+   mpi_test
+   # Next follow the same steps as in Listing 19
+   root@hostname:~/mpi_test# cd mpi_test/
+   root@hostname:~/mpi_test# gcc main.c \
+       -I/usr/lib/x86_64-linux-gnu/openmpi/include -lmpi -o main
+   # Execute binary
+   root@hostname:~/mpi_test# ./main
+   Hello world from processor hostname, rank 0 out of 1 processor.
 
 
 .. _erda-jupyter-modi-support:
