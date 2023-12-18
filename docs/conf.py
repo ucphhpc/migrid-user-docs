@@ -16,6 +16,7 @@ author = "ERDA/SIF Support Team"
 extensions = [
     "sphinx_rtd_theme",
     "sphinxemoji.sphinxemoji",
+    "sphinx_tabs.tabs",
 ]
 pygments_style = 'sphinx'
 # Add any paths that contain templates here, relative to this directory.
