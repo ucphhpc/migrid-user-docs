@@ -4,8 +4,8 @@
 # -- Project information -----------------------------------------------------
 
 project = "MiGrid User Docs"
-copyright = "2023 ERDA/SIF Support Team"
-author = "ERDA/SIF Support Team"
+copyright = "2023 SCIENCE HPC Center Support Team"
+author = "SCIENCE HPC Center Support Team"
 
 
 # -- General configuration ---------------------------------------------------
@@ -16,7 +16,6 @@ author = "ERDA/SIF Support Team"
 extensions = [
     "sphinx_rtd_theme",
     "sphinxemoji.sphinxemoji",
-    "sphinx_tabs.tabs",
 ]
 pygments_style = 'sphinx'
 # Add any paths that contain templates here, relative to this directory.

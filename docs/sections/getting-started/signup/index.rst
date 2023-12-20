@@ -12,7 +12,7 @@ In addition, to further protect your account, we have a section on :ref:`signup-
 
 .. _signup-ucph:
 Sign up with a UCPH account
----------------------------
+===========================
 
 Go to `ERDA <https://erda.ku.dk/>`_ or `SIF <https://sif.ku.dk/>`_ and click "Sign up".
 
@@ -29,7 +29,7 @@ You are now registered as either a ERDA or SIF user.
 
 .. _signup-external:
 Sign up for external collaboration partner
-------------------------------------------
+==========================================
 
 Go to `ERDA <https://erda.ku.dk/>`_ or `SIF <https://sif.ku.dk/>`_ and click on the *External Users* tab, before clicking "Sign up".
 
@@ -58,7 +58,7 @@ To log in, click the link in the email and log onto the service with your email 
 
 .. _signup-twofactor:
 Two-factor Authentication
--------------------------
+=========================
 
 .. note::
    To increase security, we recommand that you use two-factor authentication for all ERDA access, and have made it compulsory for SIF access.
@@ -70,34 +70,34 @@ This guide contains all necessary knowledge for both ERDA and SIF.
 
 
 Setup
-^^^^^
+-----
 
-.. tabs::
+ERDA
+^^^^
 
-   .. group-tab:: ERDA
+When setting up two-factor authentication, you must complete a one-time wizard.
 
-      When setting up two-factor authentication, you must complete a one-time wizard.
+Click the green avatar in the bottom left corner. Click "Setup".
 
-      Click the green avatar in the bottom left corner. Click "Setup".
+.. image:: /images/authenticator/authenticator-wizard.png
 
-      .. image:: /images/authenticator/authenticator-wizard.png
+Click on the button "Okay, let's go!"
 
-      Click on the button "Okay, let's go!"
+.. image:: /images/authenticator/authenticator-go.png
 
-      .. image:: /images/authenticator/authenticator-go.png
-
-      A wizard will now appear in ERDA which you must follow, either via its text in the wizard or by following along here.
+A wizard will now appear in ERDA which you must follow, either via its text in the wizard or by following along here.
 
 
-   .. group-tab:: SIF
+SIF
+^^^
 
-      When you sign up for SIF, you must complete a one-time wizard to configure the compulsory two-factor authentication.
-      Click ‘Okay, let’s go!’
-      A wizard will now appear in SIF which you must carefully follow, either via its text in the wizard or by following along here.
+When you sign up for SIF, you must complete a one-time wizard to configure the compulsory two-factor authentication.
+Click ‘Okay, let’s go!’
+A wizard will now appear in SIF which you must carefully follow, either via its text in the wizard or by following along here.
 
 
 Download App
-^^^^^^^^^^^^
+------------
 
 You need to install a TOTP Authenticator client on either a phone or tablet, like `Google Authenticator <https://en.wikipedia.org/wiki/Google_Authenticator>`_, `FreeOTP <https://freeotp.github.io/>`_, `Yubico Authenticator <https://www.yubico.com/products/yubico-authenticator/#h-download-yubico-authenticator>`_, `Bitwarden <https://bitwarden.com/download/>`_ or `NetIQ Advanced Authentication <https://www.microfocus.com/en-us/cyberres/identity-access-management/advanced-authentication>`_. Find any of these where you normally download apps, and click "I've got it installed!".
 
@@ -106,7 +106,7 @@ You need to install a TOTP Authenticator client on either a phone or tablet, lik
 
 
 Import personal two-factor code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 Import your personal two-factor code with "Scan your Personal QR code" or type your personal key code.
 
@@ -127,7 +127,7 @@ Your application should now have a profile which generates a six-digit token, wh
 
 
 Verify that it works
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 After downloading and importing your personal two-factor code, you can verify that it works properly by clicking the *Verify* button. A pop-up window automatically appears, and you must enter the token which shows up in your app. Please note that the token changes after 30 seconds, and will not work after that. Click the **Verify** button in the pop-up and it will confirm whether your two-factor is set up correct.
 
@@ -135,25 +135,25 @@ After downloading and importing your personal two-factor code, you can verify th
 
 
 Enable two-factor Authentication
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
-.. tabs::
+ERDA
+^^^^
 
-   .. group-tab:: ERDA
+Tap the slider button under *Enable 2-FA for KU/UCPH OpenID web login* to switch it from grey/off to green/on.
 
-      Tap the slider button under *Enable 2-FA for KU/UCPH OpenID web login* to switch it from grey/off to green/on.
+.. image:: /images/authenticator/authenticator-toggle.png
 
-      .. image:: /images/authenticator/authenticator-toggle.png
+Additional two-factor authentication options for WebDAVS, SFTP and FTPS are now shown. These are protocols which you primarily need if you want to use ERDA as a network drive on your own computer.
 
-      Additional two-factor authentication options for WebDAVS, SFTP and FTPS are now shown. These are protocols which you primarily need if you want to use ERDA as a network drive on your own computer.
+If you are not sure whether you are going to use ERDA as a network drive, we recommend that you activate all three slider buttons by switching them to green/on.
 
-      If you are not sure whether you are going to use ERDA as a network drive, we recommend that you activate all three slider buttons by switching them to green/on.
+Click *Save 2-Factor Auth Settings*.
 
-      Click *Save 2-Factor Auth Settings*.
+Your ERDA account is now protected with two-factor authentication.
 
-      Your ERDA account is now protected with two-factor authentication.
+SIF
+^^^
 
-   .. group-tab:: SIF
-
-      Click *Start Using UCPH SIF*.
+Click *Start Using UCPH SIF*.
                  
