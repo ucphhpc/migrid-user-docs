@@ -60,7 +60,7 @@ To log in, click the link in the email and log onto the service with your email 
 Two-factor Authentication
 -------------------------
 
-.. Security::
+.. note::
    To increase security, we recommand that you use two-factor authentication for all ERDA access, and have made it compulsory for SIF access.
 
 With two-factor authentication, you can add an extra verification step to the login process which authenticates you.
@@ -76,24 +76,24 @@ Setup
 
    .. group-tab:: ERDA
 
-   When setting up two-factor authentication, you must complete a one-time wizard.
+      When setting up two-factor authentication, you must complete a one-time wizard.
 
-   Click the green avatar in the bottom left corner. Click "Setup".
+      Click the green avatar in the bottom left corner. Click "Setup".
 
-   .. image:: /images/authenticator/authenticator-wizard.png
+      .. image:: /images/authenticator/authenticator-wizard.png
 
-   Click on the button "Okay, let's go!"
+      Click on the button "Okay, let's go!"
 
-   .. image:: /images/authenticator/authenticator-go.png
+      .. image:: /images/authenticator/authenticator-go.png
 
-   A wizard will now appear in ERDA which you must follow, either via its text in the wizard or by following along here.
+      A wizard will now appear in ERDA which you must follow, either via its text in the wizard or by following along here.
 
 
    .. group-tab:: SIF
 
-   When you sign up for SIF, you must complete a one-time wizard to configure the compulsory two-factor authentication.
-   Click ‘Okay, let’s go!’
-   A wizard will now appear in SIF which you must carefully follow, either via its text in the wizard or by following along here.
+      When you sign up for SIF, you must complete a one-time wizard to configure the compulsory two-factor authentication.
+      Click ‘Okay, let’s go!’
+      A wizard will now appear in SIF which you must carefully follow, either via its text in the wizard or by following along here.
 
 
 Download App
@@ -101,7 +101,7 @@ Download App
 
 You need to install a TOTP Authenticator client on either a phone or tablet, like `Google Authenticator <https://en.wikipedia.org/wiki/Google_Authenticator>`_, `FreeOTP <https://freeotp.github.io/>`_, `Yubico Authenticator <https://www.yubico.com/products/yubico-authenticator/#h-download-yubico-authenticator>`_, `Bitwarden <https://bitwarden.com/download/>`_ or `NetIQ Advanced Authentication <https://www.microfocus.com/en-us/cyberres/identity-access-management/advanced-authentication>`_. Find any of these where you normally download apps, and click "I've got it installed!".
 
-.. Note::
+.. note::
    If you only have a private mobile phone/tablet and you do not want to use it and are an UCPH employee, you may request a small device that you can use instead. Contact support@erda.dk for further information.
 
 
@@ -141,19 +141,19 @@ Enable two-factor Authentication
 
    .. group-tab:: ERDA
 
-   Tap the slider button under *Enable 2-FA for KU/UCPH OpenID web login* to switch it from grey/off to green/on.
+      Tap the slider button under *Enable 2-FA for KU/UCPH OpenID web login* to switch it from grey/off to green/on.
 
-   .. image:: /images/authenticator/authenticator-toggle.png
+      .. image:: /images/authenticator/authenticator-toggle.png
 
-   Additional two-factor authentication options for WebDAVS, SFTP and FTPS are now shown. These are protocols which you primarily need if you want to use ERDA as a network drive on your own computer.
+      Additional two-factor authentication options for WebDAVS, SFTP and FTPS are now shown. These are protocols which you primarily need if you want to use ERDA as a network drive on your own computer.
 
-   If you are not sure whether you are going to use ERDA as a network drive, we recommend that you activate all three slider buttons by switching them to green/on.
+      If you are not sure whether you are going to use ERDA as a network drive, we recommend that you activate all three slider buttons by switching them to green/on.
 
-   Click *Save 2-Factor Auth Settings*.
+      Click *Save 2-Factor Auth Settings*.
 
-   Your ERDA account is now protected with two-factor authentication.
+      Your ERDA account is now protected with two-factor authentication.
 
    .. group-tab:: SIF
 
-   Click *Start Using UCPH SIF*.
+      Click *Start Using UCPH SIF*.
                  
