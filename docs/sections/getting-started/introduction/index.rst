@@ -2,7 +2,7 @@
 .. _getting-started:
 
 ===============
-Getting Started
+Introduction
 ===============
 
 `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ are two services provided by the University of Copenhagen

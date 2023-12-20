@@ -6,7 +6,8 @@ ERDA/SIF: User Guides
    :hidden:
    :caption: Get Started
 
-   sections/getting-started/index
+   sections/getting-started/introduction/index
+   sections/getting-started/signup/index
    sections/faq/index
 
 .. toctree::
@@ -14,18 +15,10 @@ ERDA/SIF: User Guides
    :hidden:
    :caption: ERDA
 
-   sections/erda/signup/index
    sections/erda/workgroup/index
    sections/erda/jupyter/index
    sections/erda/networkdrive/index
    sections/erda/seafile/index
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: SIF
-
-   sections/sif/signup/index
    
 .. Note::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.
