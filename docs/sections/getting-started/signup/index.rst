@@ -17,8 +17,11 @@ Sign up with a UCPH account
 Go to `ERDA <https://erda.ku.dk/>`_ or `SIF <https://sif.ku.dk/>`_ and click "Sign up".
 
 In the pop-up window under "UCPH OpenID", enter:
+
 - Your UCPH username (consists of three letters and three digits)
+
 - Your personal UCPH password, which you also use, e.g. for KUnet
+
 - Then click "Yes (allow)".
 
 You are now registered as either a ERDA or SIF user.
@@ -31,12 +34,19 @@ Sign up for external collaboration partner
 Go to `ERDA <https://erda.ku.dk/>`_ or `SIF <https://sif.ku.dk/>`_ and click on the *External Users* tab, before clicking "Sign up".
 
 You will be required to complete the form with your details:
+
 - Full name: *Enter your full name*
+
 - Email address: *Your work email (no third-party email services such as hotmail, gmail or yahoo)*
+
 - Organisation: *The name of your workplace/company*
+
 - Country: *Select your country in the dropdown menu*
+
 - Password: *Create a sufficiently difficult password for your access. It must consist of at least eight characters and must contain a combination of lowercase and uppercase letters, digits and special characters (at least three of the four types mentioned). In “Verify password”, you repeat the password*
+
 - Optional comment..: *Refer to your contact who is employed at the University of Copenhagen (name + email) and indicate any relevant project, course or collaboration.*
+
 - I accept..: *Read the “terms and conditions” and tick the box*
 
 Your request to sign up as an ERDA or SIF user will now be sent to the SCIENCE HPC Center administrators, who will obtain consent from the UCPH employee regarding the collaboration.
