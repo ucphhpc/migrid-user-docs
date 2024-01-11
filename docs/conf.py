@@ -27,7 +27,7 @@ templates_path = ["_templates"]
 exclude_patterns = []
 
 # HTML logo which will show on top of the sidebar
-html_logo = "MiG-logo.png"
+html_logo = "_static/faelles.svg"
 
 # -- Options for HTML output -------------------------------------------------
 
