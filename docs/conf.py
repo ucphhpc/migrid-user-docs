@@ -3,7 +3,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "MiGrid User Docs"
+project = "ERDA & SIF support"
 copyright = "2023 SCIENCE HPC Center Support Team"
 author = "SCIENCE HPC Center Support Team"
 
