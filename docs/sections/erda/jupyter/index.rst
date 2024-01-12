@@ -20,7 +20,7 @@ To get access to these services, click the **Jupyter** button in the navigation 
 
     The current setup does not at the moment support interactive functionalities such as srun and similar.
 
-.. IMPORTANT::
+.. important::
    It's particularly important to pay attention to the part about running sbatch commands using the shared modi_mount directory for jobs to succeed.
 
 .. toctree::
