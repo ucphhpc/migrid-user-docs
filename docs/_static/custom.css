@@ -8,11 +8,11 @@ body {
 }
 /* Custom theming for screens width 1100px and up */
 @media screen and (min-width: 1100px) {
-	.rst-content .note .admonition-title, .rst-content .note .wy-alert-title, .rst-content .seealso .admonition-title,
-        .rst-content .seealso .wy-alert-title, .rst-content .wy-alert-info.admonition-todo .admonition-title, 
-	.rst-content .important .admonition-title, .rst-content .wy-alert-info.admonition-todo .wy-alert-title, 
-	.rst-content .wy-alert-info.admonition .admonition-title, .rst-content .wy-alert-info.admonition .wy-alert-title, 
-	.rst-content .wy-alert-info.attention .admonition-title, 
+		.rst-content .note .admonition-title, .rst-content .note .wy-alert-title, .rst-content .seealso .admonition-title,
+		.rst-content .seealso .wy-alert-title, .rst-content .wy-alert-info.admonition-todo .admonition-title, 
+		.rst-content .important .admonition-title, .rst-content .wy-alert-info.admonition-todo .wy-alert-title, 
+		.rst-content .wy-alert-info.admonition .admonition-title, .rst-content .wy-alert-info.admonition .wy-alert-title, 
+		.rst-content .wy-alert-info.attention .admonition-title, .rst-content .tip .admonition-title,
         .rst-content .wy-alert-info.attention .wy-alert-title, .rst-content .wy-alert-info.caution .admonition-title, 
         .rst-content .wy-alert-info.caution .wy-alert-title, .rst-content .wy-alert-info.danger .admonition-title, 
         .rst-content .wy-alert-info.danger .wy-alert-title, .rst-content .wy-alert-info.error .admonition-title, 
@@ -22,27 +22,26 @@ body {
         .rst-content .wy-alert-info.tip .wy-alert-title, .rst-content .wy-alert-info.warning .admonition-title, 
         .rst-content .wy-alert-info.warning .wy-alert-title, .rst-content .wy-alert.wy-alert-info .admonition-title, 
         .wy-alert.wy-alert-info .rst-content .admonition-title, .wy-alert.wy-alert-info .wy-alert-title {
-		background-color: #901A1E;
-	}
-	.rst-content .note, .rst-content .seealso, .rst-content .wy-alert-info.admonition, .rst-content .wy-alert-info.admonition-todo,
-        .rst-content .important, .rst-content .wy-alert-info.attention, .rst-content .wy-alert-info.caution, .rst-content .wy-alert-info.danger, 
-        .rst-content .wy-alert-info.error, .rst-content .wy-alert-info.hint, .rst-content .wy-alert-info.important, 
-	.rst-content .wy-alert-info.tip, .rst-content .wy-alert-info.warning, .wy-alert.wy-alert-info {
+			background-color: #901A1E;
+		}
+		.rst-content .note, .rst-content .seealso, .rst-content .wy-alert-info.admonition, .rst-content .wy-alert-info.admonition-todo,
+        .rst-content .important, .rst-content .tip, .rst-content .wy-alert-info.attention, .rst-content .wy-alert-info.caution, 
+        .rst-content .wy-alert-info.danger, .rst-content .wy-alert-info.error, .rst-content .wy-alert-info.hint, 
+        .rst-content .wy-alert-info.important, .rst-content .wy-alert-info.tip, .rst-content .wy-alert-info.warning, .wy-alert.wy-alert-info {
        		background: #fff;
-	  	border: 1px solid #901A1E; 
-  	}
-    	.wy-nav-side,
-    	.wy-grid-for-nav {
+	  		border: 1px solid #901A1E; 
+  		}
+    	.wy-nav-side, .wy-grid-for-nav {
         	margin-left: calc(((100vw - 1100px) / 2));
         }
-   	.wy-menu-vertical header, .wy-menu-vertical p.caption {
-   		color: #000;
-   		font-size: 95%;
-   	}
-	.wy-grid-for-nav nav {
-		background: white
-	}
-	.wy-nav-content-wrap {
+	   	.wy-menu-vertical header, .wy-menu-vertical p.caption {
+   			color: #000;
+   			font-size: 95%;
+   		}
+		.wy-grid-for-nav nav {
+			background: white
+		}
+		.wy-nav-content-wrap {
         	background: none;
     	}
     	.wy-body-for-nav {
@@ -51,17 +50,17 @@ body {
     	.wy-body-for-nav a {
     		color: #000;
     	}
-	.wy-nav-content a {
-		color: #901A1E;
-	}
-	.wy-menu-vertical li.current > a, .wy-menu-vertical li.on a {
-		background: lightgrey
-	}
-	.wy-menu-vertical a:hover {
+		.wy-nav-content a {
+			color: #901A1E;
+		}
+		.wy-menu-vertical li.current > a, .wy-menu-vertical li.on a {
+			background: lightgrey
+		}
+		.wy-menu-vertical a:hover {
     		background-color:lightgray;
-  	  	cursor:pointer
-  	}
-	.wy-side-nav-search {
-		background: white
-	}
+  	  		cursor:pointer
+  		}
+		.wy-side-nav-search {
+			background: white
+		}
 }
