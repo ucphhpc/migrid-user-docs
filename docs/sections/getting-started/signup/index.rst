@@ -3,11 +3,12 @@
 Sign up
 =======
 
-This page is designed to help you get started with using ERDA or SIF.
+.. Note::
+   This page is designed to help you get started with using `ERDA <https://erda.ku.dk/>`_ or `SIF <https://sif.ku.dk/>`_.
 
 
-You can sign up to `ERDA <https://erda.ku.dk/>`_ or `SIF <https://sif.ku.dk/>`_ either as a UCPH employee/student (:ref:`signup-ucph`) or an external collaboration partner (:ref:`signup-external`), and you must sign up as a user before you can access either of the services.
-In addition, to further protect your account, we have a section on :ref:`signup-twofactor`.
+You can sign up to ERDA or SIF either as a UCPH employee/student (:ref:`signup-ucph`) or an external collaboration partner (:ref:`signup-external`), and you must sign up as a user before you can access either service.
+In addition, to further protect your account, we recommend that you check out our section on :ref:`signup-twofactor`, which is a **requirement** for SIF.
 
 
 .. _signup-ucph:
@@ -41,7 +42,7 @@ You will be required to complete the form with your details:
 
 - Organisation: *The name of your workplace/company*
 
-- Country: *Select your country in the dropdown menu*
+- Country: *Select your country in the drop-down menu*
 
 - Password: *Create a sufficiently difficult password for your access. It must consist of at least eight characters and must contain a combination of lowercase and uppercase letters, digits and special characters (at least three of the four types mentioned). In “Verify password”, you repeat the password*
 
@@ -61,7 +62,7 @@ Two-factor Authentication
 =========================
 
 .. note::
-   To increase security, we recommand that you use two-factor authentication for all ERDA access, and have made it compulsory for SIF access.
+   To increase security, we recommend that you use two-factor authentication for all ERDA access, and have made it compulsory for SIF access.
 
 With two-factor authentication, you can add an extra verification step to the login process which authenticates you.
 In addition to asking about something you know (in this case your username and password), an account protected by two-factor authentication will also request a token from an app you have either on your phone, tablet, or desktop.
