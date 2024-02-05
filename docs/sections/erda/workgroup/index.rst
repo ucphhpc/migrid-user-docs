@@ -1,21 +1,18 @@
 .. _erda-workgroup-start:
 
-=================
-Workgroups (ERDA)
-=================
-
-As a UCPH employee, you can set up and administrate workgroups in ERDA (:ref:`erda-workgroup-creator`).
-They include a shared folder in which you can easily share files and collaborate with others from UCPH
-and/or external collaboration partners. You can manage who has access, and there are no special restrictions
-on size or file types. All persons affiliated to UCPH as well as external partners can request access to a work group
-on ERDA (:ref:`erda-workgroup-requestor`). You can also see how to work in a workgroup in our :ref:`erda-workgroup-work` section.
+==========
+Workgroups
+==========
 
 .. Note::
-   This guide assumes that you have registered with ERDA and are logged in (see :ref:`erda-signup-start`).
+   If you are a user who need access to a workgroup, check out :ref:`erda-workgroup-requestor`. If you need to set up and administrate a workgroup in ERDA, check out :ref:`erda-workgroup-creator`.
 
+Workgroups include a shared folder where you can easily share files and collaborate with others from UCPH and/or external collaboration partners.
+Administrators can manage who has access, and there are no special restrictions on size or file types.
+All persons affiliated to UCPH as well as external partners can request access to a work group on ERDA (:ref:`erda-workgroup-requestor`).
+You can also see how to work in a workgroup in our :ref:`erda-workgroup-work` section.
 
 .. _erda-workgroup-creator:
-
 Create and administrate workgroup
 ---------------------------------
 
