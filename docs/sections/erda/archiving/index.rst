@@ -1,4 +1,4 @@
-.. _erda-archiving-start
+.. _erda-archiving-start:
 
 ================
 Archives in ERDA
