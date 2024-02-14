@@ -92,7 +92,7 @@ view archive page and use the links to access the associated files.
 
 |
 
-DOI for public achives
+DOI for public archives
 ^^^^^^^^^^^^^^^^^^^^^^
 For archives with publish enabled we also integrate access to request a Digital Object Identifier
 (DOI) after finalizing the archive. From view archive you click Register Archive DOI at the
