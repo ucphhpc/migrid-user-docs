@@ -19,6 +19,7 @@ ERDA/SIF: User Guides
    sections/erda/jupyter/index
    sections/erda/networkdrive/index
    sections/erda/seafile/index
+   sections/erda/archiving/index
    
 .. Note::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.
