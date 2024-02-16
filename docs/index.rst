@@ -1,5 +1,12 @@
+.. _index-start:
+
 ERDA/SIF: User Guides
 =====================
+
+.. toctree::
+   :hidden:
+   
+   HOME <self>
 
 .. toctree::
    :maxdepth: 2
@@ -21,7 +28,7 @@ ERDA/SIF: User Guides
    sections/erda/seafile/index
    sections/erda/archiving/index
    
-.. Note::
+.. danger::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.
 
 Welcome to the ERDA/SIF documentation site. `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ simplifies storing, sharing, analyzing and archiving research data for KU/UCPH employees, their collaboration partners, and KU/UCPH students.
