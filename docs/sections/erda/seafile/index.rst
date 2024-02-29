@@ -16,6 +16,7 @@ sensitive private data.
    which 'Datatilsynet' and other authorities define as a suitable algorithm for strong encryption.
 
 .. _erda-seafile-gettingstarted:
+
 Getting Started with Seafile
 ============================
 
@@ -32,6 +33,7 @@ Once on the Seafile login page, you just need to enter your email address and yo
 
 
 .. _erda-seafile-about:
+
 About libraries
 ===============
 
@@ -43,6 +45,7 @@ You can also install the Seafile client and use it to enter data automatically f
 
 
 .. _erda-seafile-install:
+
 Seafile Client
 ==============
 
@@ -59,6 +62,7 @@ On a standard UCPH computer (B machine), you have access to installing programs 
 
 
 .. _erda-seafile-setup:
+
 Set up Seafile Client
 ---------------------
 
@@ -70,6 +74,7 @@ Once the client has been installed, you will find a small Seafile icon in your s
 
 
 .. _erda-seafile-synch:
+
 Synchronize Files
 -----------------
 
@@ -81,11 +86,12 @@ Right-click your Seafile client in the library you want to synchronize. In the e
 
 You may be prompted to select which path on your hard drive to synchronize to. Choose this before clicking "OK".
 
-.. INFO::
+.. NOTE::
    When the synchronization of a library is initiated, the cloud icon will change to show the progress, and the cloud will turn green once the process is complete. This is also visible from within the Seafile client.
 
 
 .. _erda-seafile-share:
+
 Exchange or share data with others
 ==================================
 
@@ -113,6 +119,7 @@ An email will be sent to the selected recipients containing a link to the select
 
 
 .. _erda-seafile-sharecollab:
+
 Share data with collaboration partners
 --------------------------------------
 
@@ -157,6 +164,7 @@ Under "Shared with groups", your collaboration partners can see what you have sh
 
 
 .. _erda-seafile-creategroup:
+
 Create group
 ^^^^^^^^^^^^
 
@@ -180,6 +188,7 @@ You can share a link to a file internally within a group which already have acce
 
 
 .. _erda-seafile-receive:
+
 Receive data from others with "Upload link"
 -------------------------------------------
 
@@ -195,6 +204,7 @@ You will see a Upload Link, and if you click "Send", you will be prompted to wri
 
 
 .. _erda-seafile-tips:
+
 Tips
 ====
 
@@ -218,4 +228,4 @@ View library history
 
 Open your library and click on the clock icon "History"
 
-.. image:: /images/seafile-seafile-libraryhistory.png
+.. image:: /images/seafile/seafile-libraryhistory.png

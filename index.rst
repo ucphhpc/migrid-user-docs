@@ -1,17 +1,10 @@
-.. _index-start:
-
 ERDA/SIF: User Guides
 =====================
 
 .. toctree::
-   :hidden:
-   
-   HOME <self>
-
-.. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: HOME
+   :caption: Get Started
 
    sections/getting-started/introduction/index
    sections/getting-started/signup/index
@@ -20,7 +13,7 @@ ERDA/SIF: User Guides
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: ERDA User Guides
+   :caption: ERDA
 
    sections/erda/workgroup/index
    sections/erda/jupyter/index
@@ -28,12 +21,12 @@ ERDA/SIF: User Guides
    sections/erda/seafile/index
    sections/erda/archiving/index
    
-.. danger::
+.. Note::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.
 
-Welcome to the documentation site for ERDA and SIF! `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ simplifies storing, sharing, analyzing and archiving research data for KU/UCPH employees, their collaboration partners, and KU/UCPH students.
+Welcome to the ERDA/SIF documentation site. `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ simplifies storing, sharing, analyzing and archiving research data for KU/UCPH employees, their collaboration partners, and KU/UCPH students.
 
-To quickly get started with ERDA or SIF, we recommend our :ref:`getting-started` page. If you are looking for something specific, the search functionality and the sidebar on the left is a good way to find what you are looking for!
+To quickly get started with ERDA and/or SIF, we recommend our :ref:`getting-started` page. If you are looking for something specific, the search functionality and the sidebar on the left is a good way to find what you are looking for!
 
 |:file_cabinet:| About ERDA
     ERDA (Electronic Research Data Archive) at the University of Copenhagen (KU/UCPH) is meant for storing,
