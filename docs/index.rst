@@ -9,7 +9,6 @@ ERDA/SIF: User Guides
    
    HOME <self>
    sections/getting-started/introduction/index
-   sections/getting-started/signup/index
    sections/faq/index
 
 .. toctree::
@@ -17,6 +16,7 @@ ERDA/SIF: User Guides
    :hidden:
    :caption: ERDA User Guides
 
+   sections/erda/signup/index
    sections/erda/workgroup/index
    sections/erda/jupyter/index
    sections/erda/networkdrive/index
