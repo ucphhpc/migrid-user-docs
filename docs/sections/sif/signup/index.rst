@@ -1,4 +1,5 @@
 .. _sif-signup-start:
+=====================
 Sign up as a SIF user
 =====================
 
