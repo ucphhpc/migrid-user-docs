@@ -4,15 +4,10 @@ ERDA/SIF: User Guides
 =====================
 
 .. toctree::
+   :maxdepth: 2
    :hidden:
    
    HOME <self>
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: HOME
-
    sections/getting-started/introduction/index
    sections/getting-started/signup/index
    sections/faq/index
