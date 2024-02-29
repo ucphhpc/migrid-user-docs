@@ -1,18 +1,18 @@
-.. _erda-signup-start:
-Sign up as an ERDA user
-=======================
+.. _sif-signup-start:
+Sign up as a SIF user
+=====================
 
 .. Note::
-   This page is designed to help you get started with using `ERDA <https://erda.ku.dk/>`_. For SIF, check out :ref:`sif-signup-start`.
+   This page is designed to help you get started with using `SIF <https://sif.ku.dk/>`_. For ERDA, check out :ref:`erda-signup-start`.
 
-You can sign up to ERDA either as a UCPH employee/student (:ref:`erda-signup-ucph`) or as an external collaborataion partner (:ref:`erda-signup-external`), and you must sign up before you can access ERDA.
-In addition, to further protect your account, we recommend that you check our section on :ref:`erda-signup-twofactor`.
+You can sign up to SIF either as a UCPH employee/student (:ref:`sif-signup-ucph`) or as an external collaborataion partner (:ref:`sif-signup-external`), and you must sign up before you can access SIF.
+In addition, to further protect your account, it is compulsory to use two-factor authentication. You can check our section on :ref:`sif-signup-twofactor` for instructions on how to get it working.
 
-.. _erda-signup-ucph:
+.. _sif-signup-ucph:
 Sign up with a UCPH account
 ===========================
 
-Go to `ERDA <https://erda.ku.dk/>`_ and click "Sign up".
+Go to `SIF <https://sif.ku.dk/>`_ and click "Sign up".
 
 In the pop-up window under "UCPH OpenID", enter:
 
@@ -22,13 +22,13 @@ In the pop-up window under "UCPH OpenID", enter:
 
 - Then click "Yes (allow)".
 
-You are now registered as an ERDA user.
+You are now registered as a SIF user.
 
-.. _erda-signup-external:
+.. _sif-signup-external:
 Sign up as an external collaboration partner
 ============================================
 
-Go to `ERDA <https://erda.ku.dk/>`_ and click on the *External Users* tab, before clicking "Sign up".
+Go to `SIF <https://sif.ku.dk/>`_ and click on the *External Users* tab, before clicking "Sign up".
 
 You will be required to complete the form with your details:
 
@@ -46,38 +46,31 @@ You will be required to complete the form with your details:
 
 - I accept..: *Read the “terms and conditions” and tick the box*
 
-Your request to sign up as an ERDA will now be sent to the SCIENCE HPC Center support team, who will obtain consent from the UCPH employee regarding the collaboration.
+Your request to sign up as a SIF user will now be sent to the SCIENCE HPC Center support team, who will obtain consent from the UCPH employee regarding the collaboration.
 
 When the SCIENCE HPC Center administrators have accepted your request, you will receive an email.
 
 To log in, click the link in the email and log onto the service with your email address and your service-specific password, before clicking "yes".
 
-.. _erda-signup-twofactor:
+.. _sif-signup-twofactor:
 Two-factor Authentication
 =========================
 
 .. note::
-   To increase security, we recommend that you use two-factor authentication for all ERDA access.
+   To increase security, we have made it compulsory to use two-factor authentication for SIF access.
 
 With two-factor authentication, you can add an extra verification step to the login process which authenticates you.
 In addition to asking about something you know (in this case your username and password), an account protected by two-factor authentication will also request a token from an app you have either on your phone, tablet, or desktop.
 
-This guide contains all necessary knowledge for ERDA.
+This guide contains all necessary knowledge for SIF.
+
 
 Setup
 -----
 
-When setting up two-factor authentication, you must complete a one-time wizard.
-
-Click the green avatar in the bottom left corner. Click "Setup".
-
-.. image:: /images/authenticator/authenticator-wizard.png
-
-Click on the button "Okay, let's go!"
-
-.. image:: /images/authenticator/authenticator-go.png
-
-A wizard will now appear in ERDA which you must follow, either via its text in the wizard or by following along here.
+When you sign up for SIF, you must complete a one-time wizard to configure the compulsory two-factor authentication.
+Click ‘Okay, let’s go!’
+A wizard will now appear in SIF which you must carefully follow, either via its text in the wizard or by following along here.
 
 Download App
 ------------
@@ -86,6 +79,7 @@ You need to install a TOTP Authenticator client on either a phone or tablet, lik
 
 .. note::
    If you only have a private mobile phone/tablet and you do not want to use it and are an UCPH employee, you may request a small device that you can use instead. Contact support@erda.dk for further information.
+
 
 Import personal two-factor code
 -------------------------------
@@ -119,14 +113,6 @@ After downloading and importing your personal two-factor code, you can verify th
 Enable two-factor Authentication
 --------------------------------
 
-Tap the slider button under *Enable 2-FA for KU/UCPH OpenID web login* to switch it from grey/off to green/on.
+Click *Start Using UCPH SIF*.
 
-.. image:: /images/authenticator/authenticator-toggle.png
-
-Additional two-factor authentication options for WebDAVS, SFTP and FTPS are now shown. These are protocols which you primarily need if you want to use ERDA as a network drive on your own computer.
-
-If you are not sure whether you are going to use ERDA as a network drive, we recommend that you activate all three slider buttons by switching them to green/on.
-
-Click *Save 2-Factor Auth Settings*.
-
-Your ERDA account is now protected with two-factor authentication.
+Your SIF account is now protected with two-factor authentication, and you can safely login.

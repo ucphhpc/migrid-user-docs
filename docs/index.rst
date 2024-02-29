@@ -22,6 +22,13 @@ ERDA/SIF: User Guides
    sections/erda/networkdrive/index
    sections/erda/seafile/index
    sections/erda/archiving/index
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: SIF User Guides
+
+   sections/sif/signup/index
    
 .. danger::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.
