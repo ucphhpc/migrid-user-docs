@@ -1,22 +1,37 @@
 .. _erda-archiving-start:
 
-================
-Archives in ERDA
-================
+=================
+Archiving in ERDA
+=================
 
-The Archives page provides a method to archive or freeze a snapshot of one or more files.
+Making copies of your data files, and putting them in archives or backups, is a way to prevent loss of data.
 
-This is required, for example, in relation to handing in PhD dissertations and, in certain cases, required or convenient when
-submitting a paper to a conference or journal.
+Archives are snapshots of one or more files. The archives keeps the state
+Think of a taking a picture or creating a zip file; the object stays the same, but you create a static copy.
 
-There are two kinds of archives in ERDA:
+Benefits of copying files into an archive:
+ * selected files gets copied to a separate location
+ * archives benefits from extra secure, long-term storage (10 years guaranteed)
+ * archives can be set up as recurring backup 
 
- * **Backup archives** - Allows for one-time or recurring backups, and manual recovery of data.
- * **Frozen archives** - Provides a snapshot of a dataset, frozen in time. Two subtypes:
-  * *Private, frozen archives* - Snapshots are held in private archives.
-  * *Public, frozen archives* - Extra secure, long-term storage guaranteed + DOI for public data.
+Use cases for archives:
+ * Mandatory when handing in PhD theses
+ * Useful or required when  submitting a paper to a conference or journal
+ * Protecting a (historic) dataset from getting altered
+ * Making backups on daily, weekly or say monthly basis
+
+There are two types of archives in ERDA:
+
+ #. **Backup archives** - Allows for one-time or recurring backups, and manual recovery of data.
+ #. **Frozen archives** - Provides a snapshot of one or more files, frozen in time. Two subtypes:
+  #. *Private, frozen archives* - Snapshots are held in private archives.
+  #. *Public, frozen archives* -  Snapshot for papers, public datasets, etc. Archive can obtain a DOI.
 
 .. Note:: Archiving does not remove the files you may have selected from ERDA, but only saves a snapshot of the current contents. That is, you are free to keep working on such files afterwards and without causing changes to the archived version.
+
+.. important:: Archives provides extra data security inside ERDA.
+   
+	       Keep a secure copy of your data **outside** ERDA as well.
    
 Overview of Frozen Archives
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
