@@ -21,9 +21,6 @@ Please refer to :ref:`erda-jupyter-dag-installation` for details on how to insta
 
 
 .. _erda-jupyter-dag-installation:
-Installing packages
-===================
-
 Installing packages (session)
 -----------------------------
 
