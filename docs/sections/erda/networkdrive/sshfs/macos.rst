@@ -1,4 +1,5 @@
 .. _erda-networkdrive-msftp:
+
 Setup SSHFS with SFTP on macOS
 ==============================
 
@@ -10,6 +11,7 @@ If you have a newer Mac with Apple Silicon, then you will need to follow the bel
 
 
 .. _erda-networkdrive-applesilicon:
+
 Macs with Apple Silicon
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -27,6 +29,7 @@ You have now enabled kernel extensions, and can proceed with the main guide. Cli
 
 
 .. _erda-networkdrive-msftpsetup:
+
 Setup SSHFS
 -----------
 
@@ -39,6 +42,7 @@ Click on the SFTP tab, and create a password for your SFTP access in the field u
 
 
 .. _erda-networkdrive-msftpinstall:
+
 Install MacFUSE and SSHFS
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -57,6 +61,7 @@ Once you have installed both programs, you can finally connect ERDA as a network
 
 
 .. _erda-networkdrive-msftpconnectnetwork:
+
 Connect Nerwork Drive
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -88,6 +93,7 @@ ERDA is now connected as a network drive and will be visible on the computer's d
 
 
 .. _erda-networkdrive-msftperror:
+
 Error in the setup
 ^^^^^^^^^^^^^^^^^^
 
@@ -98,7 +104,8 @@ If you still cannot log in, then you need to follow the terminal steps in this g
 Before doing you, please run the command ``sftp -vvv io.erda.dk`` and insert the result in the mail for us to troubleshoot.
 
 
-.. _erda-networkdrive-msftperror:
+.. _erda-networkdrive-msftpdisconnect:
+
 Disconnect Network Drive
 ------------------------
 
@@ -108,6 +115,7 @@ Right-click on the drive on the Desktop, and click "Push 'macFUSE Volume 0 (sshf
 
 
 .. _erda-networkdrive-msftpreconnect:
+
 Reconnect to the Network Drive
 ------------------------------
 

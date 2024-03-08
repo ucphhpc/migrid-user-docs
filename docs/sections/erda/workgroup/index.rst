@@ -13,6 +13,7 @@ All persons affiliated to UCPH as well as external partners can request access t
 You can also see how to work in a workgroup in our :ref:`erda-workgroup-work` section.
 
 .. _erda-workgroup-creator:
+
 Create and administrate workgroup
 ---------------------------------
 

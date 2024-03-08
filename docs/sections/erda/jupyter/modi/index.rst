@@ -702,7 +702,7 @@ For environment verification we recommend testing the application support direct
 On MODI, the simplest approach is to follow the steps in :ref:`erda-jupyter-modi-examples-msjva` on one of the available Apptainer images in the ``~/modi`` images directory and simply replace the MPI aspect with the dependencies that are to be tested.
 
 To test it locally a couple of prerequisites have to be met.
-This includes either having `Docker <https://docs.docker.com/install/>`_ or `Apptainer <https://apptainer.org/docs/user/main/quick_start.html>`_ installed on your host system before you can proceed.
+This includes either having `Docker <https://docs.docker.com/install/>`__ or `Apptainer <https://apptainer.org/docs/user/main/quick_start.html>`__ installed on your host system before you can proceed.
 Then, you either need to pull a version of the image to be tested from `DockerHub <https://hub.docker.com/u/ucphhpc>`_, or build a local version directly from the source `nbi-jupyter-docker-stacks <https://github.com/ucphhpc/nbi-jupyter-docker-stacks>`_.
 
 It should be noted that if you build it yourself, the installed versions within the built image may differ from the official version on MODI.

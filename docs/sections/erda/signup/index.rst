@@ -1,4 +1,5 @@
 .. _erda-signup-start:
+
 Sign up as an ERDA user
 =======================
 
@@ -9,6 +10,7 @@ You can sign up to ERDA either as a UCPH employee/student (:ref:`erda-signup-ucp
 In addition, to further protect your account, we recommend that you check our section on :ref:`erda-signup-twofactor`.
 
 .. _erda-signup-ucph:
+
 Sign up with a UCPH account
 ---------------------------
 
@@ -25,6 +27,7 @@ In the pop-up window under "UCPH OpenID", enter:
 You are now registered as an ERDA user.
 
 .. _erda-signup-external:
+
 Sign up as an external collaboration partner
 --------------------------------------------
 
@@ -53,6 +56,7 @@ When the SCIENCE HPC Center administrators have accepted your request, you will 
 To log in, click the link in the email and log onto the service with your email address and your service-specific password, before clicking "yes".
 
 .. _erda-signup-twofactor:
+
 Two-factor Authentication
 -------------------------
 

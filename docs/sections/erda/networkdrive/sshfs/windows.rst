@@ -1,4 +1,5 @@
 .. _erda-networkdrive-wsftp:
+
 Setup SSHFS with SFTP on Windows
 ================================
 
@@ -23,6 +24,7 @@ From here, you click on the fold-out menu called "SSHFS/SFTP Network Drive" and 
 
 
 .. _erda-networkdrive-wsftpinstall:
+
 Install WinFsp and SSHFS-Win
 ----------------------------
 
@@ -52,6 +54,7 @@ If you have a special, secure UCPH computer (A machine), you need to contact UCP
 
 
 .. _erda-networkdrive-wsftpmapdrive:
+
 Map Network Drive
 -----------------
 
@@ -72,6 +75,7 @@ ERDA is now connected as a network drive with a chosen drive name, and you now h
 
 
 .. _erda-networkdrive-wsftpdisconnect:
+
 Disconnect Network Drive
 ------------------------
 
