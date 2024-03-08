@@ -1,4 +1,5 @@
 .. _erda-jupyter-modi:
+
 MODI
 ====
 
@@ -21,6 +22,7 @@ uses resources that a subsequent higher priority job requires.
 
 
 .. _erda-jupyter-modi-arc:
+
 Architecture
 ------------
 
@@ -37,6 +39,7 @@ Further details about this share setup and the special notebook directories can 
 
 
 .. _erda-jupyter-modi-spec:
+
 Node Specifications
 -------------------
 
@@ -65,6 +68,7 @@ An overview of the MODI slurm nodes specification can be seen below.
 
 
 .. _erda-jupyter-special-directories:
+
 Special Directories
 -------------------
 
@@ -75,6 +79,7 @@ The purpose of each of these will be explained in the following sections.
 
 
 .. _erda-jupyter-special-emount:
+
 erda_mount
 ^^^^^^^^^^
 
@@ -107,6 +112,7 @@ This means that at any point in time the access speed can fluctuate depending on
 
 
 .. _erda-jupyter-special-images:
+
 modi_images
 ^^^^^^^^^^^
 
@@ -115,6 +121,7 @@ At the time of writing, the directory contains the two images, i.e. the ``hpc-no
 
 
 .. _erda-jupyter-special-mmount:
+
 modi_mount
 ^^^^^^^^^^
 
@@ -129,6 +136,7 @@ Any data that is written beyond this limit will be refused with a ”Disk quota 
 
 
 .. _erda-jupyter-slurm-spec:
+
 SLURM Specifications and Job Runtimes
 -------------------------------------
 
@@ -143,6 +151,7 @@ This means that the lower priority job will be restarted once the required resou
 
 
 .. _erda-jupyter-slurm-gettingstarted:
+
 Getting Started with SLURM
 --------------------------
 
@@ -184,6 +193,7 @@ If a particular node ever gets stuck in an unavailable state such as ``down*`` o
 
 
 .. _erda-jupyter-slurm-gettingstarted-wir:
+
 What is running?
 ^^^^^^^^^^^^^^^^
 
@@ -249,6 +259,7 @@ Furthermore, basic examples of how to configure and submit simple bash or MPI ba
 
 
 .. _erda-jupyter-slurm-gettingstarted-sap:
+
 Selecting a Partition
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -287,6 +298,7 @@ Another way to specify the partition, is to specify it inside the script that is
 An example of this can be seen below
 
 .. code-block::
+   
    lp630_ku_dk@6155c12973e5:~/modi_mount/python_hello_world$ cat slurm_job.sh
    #!/bin/bash
    #SBATCH --partition=modi_short
@@ -294,6 +306,7 @@ An example of this can be seen below
 
 
 .. _erda-jupyter-apptainer:
+
 Apptainer Images
 ----------------
 
@@ -320,6 +333,7 @@ In both cases we will consider the requests on a case by case basis.
 
 
 .. _erda-jupyter-modi-installingcustom:
+
 Installing Custom Packages
 --------------------------
 
@@ -412,6 +426,7 @@ To execute either of these two examples, the ‘slurm job.sh‘ has to be submit
 
 
 .. _erda-jupyter-modi-examples:
+
 Examples
 --------
 
@@ -420,6 +435,7 @@ This includes how to get a simple batch job working, how to scale it to run on m
 
 
 .. _erda-jupyter-modi-examples-hw:
+
 SLURM Hello World Job
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -524,6 +540,7 @@ Please refer to the `sbatch man page <https://slurm.schedmd.com/sbatch.html>`_ a
 
 
 .. _erda-jupyter-modi-examples-sjwa:
+
 SLURM Job with Apptainer
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -580,6 +597,7 @@ The steps presented in :ref:`erda-jupyter-modi-examples-tids` are applicable to 
 
 
 .. _erda-jupyter-modi-examples-msjva:
+
 MPI SLURM Job via Apptainer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -675,6 +693,7 @@ From the result we can see that the program was successfully executed within the
 
 
 .. _erda-jupyter-modi-examples-tids:
+
 Test Image Dependencies Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -765,6 +784,7 @@ Apptainer mount and execute program
 
 
 .. _erda-jupyter-modi-support:
+
 Further Support
 ---------------
 

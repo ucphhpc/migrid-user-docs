@@ -1,4 +1,5 @@
 .. _erda-jupyter-dag:
+
 DAG
 ===
 
@@ -21,6 +22,7 @@ Please refer to :ref:`erda-jupyter-dag-installation` for details on how to insta
 
 
 .. _erda-jupyter-dag-installation:
+
 Installing packages (session)
 -----------------------------
 
@@ -28,6 +30,7 @@ To install packages which last throughout the current session, you may simply op
 For the Python notebooks, please refer to :ref:`erda-jupyter-dag-python`, whereas for the Julia packages, refer to :ref:`erda-jupyter-dag-julia`.
 
 .. _erda-jupyter-dag-python:
+
 Python
 ^^^^^^
 
@@ -51,6 +54,7 @@ to the pip or pip3 install command. This will ensure that the package is install
 home ``__{service}_config__`` directory, which persists between the individual Jupyter sessions.
 
 .. _erda-jupyter-dag-r:
+
 R / RStudio
 ^^^^^^^^^^^
 
@@ -68,12 +72,14 @@ or in an R environment with:
 Afterwards the packages can be installed with the mentioned install.packages() command if needed.
 
 .. _erda-jupyter-dag-julia:
+
 Julia
 ^^^^^
 
 WIP
 
 .. _erda-jupyter-dag-other:
+
 Other packages and install
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -85,3 +91,10 @@ and your working environment.
 Similarly use
 ``conda search NAME``
 to search for available packages.
+
+
+.. _erda-jupyter-dag-installation-persistent:
+
+Suggesting packages and adding new notebooks
+--------------------------------------------
+
