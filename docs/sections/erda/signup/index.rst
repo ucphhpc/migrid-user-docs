@@ -10,7 +10,7 @@ In addition, to further protect your account, we recommend that you check our se
 
 .. _erda-signup-ucph:
 Sign up with a UCPH account
-===========================
+---------------------------
 
 Go to `ERDA <https://erda.ku.dk/>`_ and click "Sign up".
 
@@ -26,7 +26,7 @@ You are now registered as an ERDA user.
 
 .. _erda-signup-external:
 Sign up as an external collaboration partner
-============================================
+--------------------------------------------
 
 Go to `ERDA <https://erda.ku.dk/>`_ and click on the *External Users* tab, before clicking "Sign up".
 
@@ -54,7 +54,7 @@ To log in, click the link in the email and log onto the service with your email 
 
 .. _erda-signup-twofactor:
 Two-factor Authentication
-=========================
+-------------------------
 
 .. note::
    To increase security, we recommend that you use two-factor authentication for all ERDA access.
@@ -65,7 +65,7 @@ In addition to asking about something you know (in this case your username and p
 This guide contains all necessary knowledge for ERDA.
 
 Setup
------
+^^^^^
 
 When setting up two-factor authentication, you must complete a one-time wizard.
 
@@ -80,7 +80,7 @@ Click on the button "Okay, let's go!"
 A wizard will now appear in ERDA which you must follow, either via its text in the wizard or by following along here.
 
 Download App
-------------
+^^^^^^^^^^^^
 
 You need to install a TOTP Authenticator client on either a phone or tablet, like `Google Authenticator <https://en.wikipedia.org/wiki/Google_Authenticator>`_, `FreeOTP <https://freeotp.github.io/>`_, `Yubico Authenticator <https://www.yubico.com/products/yubico-authenticator/#h-download-yubico-authenticator>`_, `Bitwarden <https://bitwarden.com/download/>`_ or `NetIQ Advanced Authentication <https://www.microfocus.com/en-us/cyberres/identity-access-management/advanced-authentication>`_. Find any of these where you normally download apps, and click "I've got it installed!".
 
@@ -88,7 +88,7 @@ You need to install a TOTP Authenticator client on either a phone or tablet, lik
    If you only have a private mobile phone/tablet and you do not want to use it and are an UCPH employee, you may request a small device that you can use instead. Contact support@erda.dk for further information.
 
 Import personal two-factor code
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Import your personal two-factor code with "Scan your Personal QR code" or type your personal key code.
 
@@ -109,7 +109,7 @@ Your application should now have a profile which generates a six-digit token, wh
 
 
 Verify that it works
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 After downloading and importing your personal two-factor code, you can verify that it works properly by clicking the *Verify* button. A pop-up window automatically appears, and you must enter the token which shows up in your app. Please note that the token changes after 30 seconds, and will not work after that. Click the **Verify** button in the pop-up and it will confirm whether your two-factor is set up correct.
 
@@ -117,7 +117,7 @@ After downloading and importing your personal two-factor code, you can verify th
 
 
 Enable two-factor Authentication
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tap the slider button under *Enable 2-FA for KU/UCPH OpenID web login* to switch it from grey/off to green/on.
 
