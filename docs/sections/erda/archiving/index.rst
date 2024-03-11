@@ -1,12 +1,23 @@
 .. _erda-archiving-start:
 
+.. |delete| image:: /_static/archive_delete.svg
+   :width: 16px
+   :height: 2ex
+   :class: no-scaled-link
+.. |info| image:: /_static/archive_information.svg
+   :width: 16px
+   :class: no-scaled-link
+.. |wrench| image:: /_static/archive_wrench.svg
+   :width: 16px
+   :class: no-scaled-link      
+
 =================
 Archiving in ERDA
 =================
 
-Making copies of your data files, and putting them in archives or backups, is a way to prevent loss of data.
+Making copies of your data files, ie. putting them in archives and backups, are ways of preventing data loss.
 
-Archives are snapshots of one or more files. The archives keeps the state
+An archive is a snapshot of one or more files. A snapshot preserve the files in the state at creation. 
 Think of a taking a picture or creating a zip file; the object stays the same, but you create a static copy.
 
 Benefits of copying files into an archive:
@@ -14,25 +25,29 @@ Benefits of copying files into an archive:
  * archives benefits from extra secure, long-term storage (10 years guaranteed)
  * archives can be set up as recurring backup 
 
-Use cases for archives:
+Example cases for using archives:
  * Mandatory when handing in PhD theses
- * Useful or required when  submitting a paper to a conference or journal
+ * Useful or required when submitting a paper to a conference or journal
  * Protecting a (historic) dataset from getting altered
  * Making backups on daily, weekly or say monthly basis
 
 There are two types of archives in ERDA:
 
  #. **Backup archives** - Allows for one-time or recurring backups, and manual recovery of data.
- #. **Frozen archives** - Provides a snapshot of one or more files, frozen in time. Two subtypes:
-  #. *Private, frozen archives* - Snapshots are held in private archives.
-  #. *Public, frozen archives* -  Snapshot for papers, public datasets, etc. Archive can obtain a DOI.
+ #. **Frozen archives** - Provides a snapshot of one or more files, frozen in time. Two subtypes
+ 
+    #. Private, frozen archives - Snapshots are held in private archives.
+    #. Public, frozen archives -  Snapshot for papers, public datasets, etc. Archive can obtain a DOI.
+
 
 .. Note:: Archiving does not remove the files you may have selected from ERDA, but only saves a snapshot of the current contents. That is, you are free to keep working on such files afterwards and without causing changes to the archived version.
 
-.. important:: Archives provides extra data security inside ERDA.
-   
-	       Keep a secure copy of your data **outside** ERDA as well.
-   
+.. important:: 
+   - Finalized archives provides extra data security **inside** ERDA.
+   - Always keep a secure copy of your data **outside** ERDA as well.
+
+| 
+
 Overview of Frozen Archives
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Initially your archives list is empty, but after adding a
@@ -43,9 +58,9 @@ few different archives, it could look like the example below.
    :class: with-border
    :width: 90%  
 	   
-You can inspect a frozen archive with the green info icon IKON, edit unfinished archives with the green
-wrench icon IKON , and, if the system is configured to allow deletion of archives, you can remove them
-again with the red remove icon IKON.
+You can inspect a frozen archive with the green info icon |info|, edit unfinished archives with the green
+wrench icon |wrench|, and, if the system is configured to allow deletion of archives, you can remove them
+again with the red remove icon |delete|.
 
 |
 
@@ -108,7 +123,7 @@ view archive page and use the links to access the associated files.
 |
 
 DOI for public archives
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 For archives with publish enabled, we also integrate access to request a Digital Object Identifier
 (DOI) after finalizing the archive. From view archive you click "Register Archive DOI" at the
 bottom to reach the central UCPH DOI registration portal. Typically, this involves clicking through a
