@@ -76,7 +76,9 @@ Afterwards the packages can be installed with the mentioned install.packages() c
 Julia
 ^^^^^
 
-WIP
+For Julia packages, DAG supports both installation directly into your notebook environment, or through the command terminal.
+To install in a notebook, you can use ``using Pkg`` and then ``Pkg.add(x)`` where ``x`` is the wanted package, before executing the block it is placed in.
+To install it through the command terminal, you can run Julia before using the same commands as with the notebook.
 
 .. _erda-jupyter-dag-other:
 
@@ -98,3 +100,4 @@ to search for available packages.
 Suggesting packages and adding new notebooks
 --------------------------------------------
 
+If you want something available to more people in an easy-to-use manner, you can either contact us via our support mail, or check out our `GitHub <https://github.com/ucphhpc/nbi-jupyter-docker-stacks>`_ and create a pull request.
