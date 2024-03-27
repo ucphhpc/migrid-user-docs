@@ -1,5 +1,6 @@
 .. _erda-signup-start:
 
+=======================
 Sign up as an ERDA user
 =======================
 

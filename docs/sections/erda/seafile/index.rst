@@ -1,8 +1,8 @@
 .. _erda-seafile-start:
 
-============
-ERDA Seafile
-============
+=========================
+Seafile: Personal storage
+=========================
 
 ERDA Seafile is a file/folder synchronization and data sharing service similar to Dropbox/OneDrive/Google Drive/iCloud - But with the advantage that your data are stored internally and securely at UCPH.
 Seafile provides sharing capabilities which can be used to share data with internals and externals, and in that context it is left to the users to adhere to rules and regulations about confidentiality and

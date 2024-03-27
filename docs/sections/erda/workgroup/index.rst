@@ -1,8 +1,8 @@
 .. _erda-workgroup-start:
 
-==========
-Workgroups
-==========
+=================================
+Workgroups: Share and collaborate
+=================================
 
 .. Note::
    If you are a user who need access to a workgroup, check out :ref:`erda-workgroup-requestor`. If you need to set up and administrate a workgroup in ERDA, check out :ref:`erda-workgroup-creator`.
