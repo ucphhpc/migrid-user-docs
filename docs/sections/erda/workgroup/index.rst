@@ -137,17 +137,17 @@ Upload file
 ^^^^^^^^^^^
 In order to upload a file, you first have to go into the workgroup you want to upload it to by clicking "*Open*" on the workgroup, as shown below.
 
-.. images:: /images/workgroups/workgroups-open.png
-
+.. image:: /images/workgroups/workgroups-open.png
+ 
 You are now in the workgroup's shared folder, which all members and owners have full access.
 
 Right-click to access the menu, where you have different options, shown below:
 
-.. images:: /images/workgroups/workgroups-rightclick.png
+.. image:: /images/workgroups/workgroups-rightclick.png
 
 Click "*Upload File*" to upload a file to the folder, and click "*Add files...*" and select the file(s) you want to upload.
 
-.. images:: /images/workgroups/workgroups-addfiles.png
+.. image:: /images/workgroups/workgroups-addfiles.png
 
 In the *Upload Files* menu, you can also drag and drop the file(s) you want to upload.
 
