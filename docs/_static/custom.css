@@ -1,3 +1,4 @@
+
 a {
 	color: #679c5b;
 }
@@ -13,6 +14,58 @@ body {
         border-width: 2px;
         border-style: solid;
     }
+
+/* Details expand-collaps boxes */
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  font-size: 15px;
+  background: lightgrey;
+  padding: 3px 2px 0 5px;
+}
+.wy-nav-content a {
+  color: #666 !important;
+}
+
+summary::after {
+  content: '';
+  width: 18px;
+  height: 10px;
+  background: url('arrow_down.svg') no-repeat;
+  background-size: 14px;
+  margin-left: .75em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+  position: relative;
+  bottom: 2px;
+  right: 4px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  border-radius: 0px;
+}
+
+details[open] summary {
+  border-radius: 0px 0px 0 0;
+}
+
+details {
+  border-radius: 0px;
+  border: 1px solid #666;
+  margin-bottom: 10px;
+}
+
 
     /* Coloring */    
     .rst-content .note .admonition-title, 

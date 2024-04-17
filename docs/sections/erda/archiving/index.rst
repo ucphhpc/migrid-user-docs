@@ -19,6 +19,19 @@ This section shows how to secure your data inside ERDA itself. It can increase l
 An *archive* is a snapshot of one or more files in ERDA. They are preserved in the state of creation time.
 Think of a taking a still picture or creating a zip file; the original files are subject to change, while the archive are frozen in time.
 
+.. raw:: html
+
+   <details>
+   <summary><a>Fold ud, fold ind eksempel</a></summary>
+
+.. code-block:: python
+
+   lots_of_code = "this text block"
+
+.. raw:: html
+
+   </details>
+
 Benefits of copying files into an archive:
  * frozen archives are stored in separate physical location
  * extra secure, long-term storage guaranteed (10 years)
