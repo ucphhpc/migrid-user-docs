@@ -22,11 +22,11 @@ Think of a taking a still picture or creating a zip file; the original files are
 .. raw:: html
 
    <details>
-   <summary><a>Fold ud, fold ind eksempel</a></summary>
+   <summary><a>Example box that can expand</a></summary>
 
 .. code-block:: python
 
-   lots_of_code = "this text block"
+   code_example = "This is an example"
 
 .. raw:: html
 
