@@ -148,7 +148,6 @@ styles/
 
 # Ignore build dir in Sphinx + more
 .venv/
-Makefile
 build/
 docs/build
 index.deprecated
