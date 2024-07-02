@@ -2,15 +2,64 @@
 a {
 	color: #679c5b;
 }
+
 body {
 	font-family: "Open Sans",Helvetica,Arial,sans-serif
 }
-/* Custom theming for screens width 1100px and up */
+
+@media screen and (max-width: 1100px) {
+  .wy-nav-content-wrap {
+    margin-left: 0;
+  }
+
+  .wy-nav-side {
+    left: -300px;
+  }
+
+  .wy-nav-side.shift {
+    left: 0px;
+    width: 300px;
+    background: unset;
+  }
+
+  .wy-nav-content-wrap.shift {
+    position: fixed;
+    min-width: 100%;
+    left: 300px;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .wy-menu.wy-menu-vertical, .wy-side-nav-search, .wy-side-scroll {
+    width: 300px;
+  }
+
+  .wy-nav-top {
+    display: block;
+    background: #c9c9c9;
+  }
+
+  [data-toggle="wy-nav-top"] {
+    color: #404040;
+  }
+
+  nav.wy-nav-top a {
+    color: #404040;
+    font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif;
+    font-size: 200%;
+  }
+}
 
 @media screen and (min-width: 1100px) {
+  .wy-grid-for-nav nav {
+    background: white;
+  }
+}
+
 /* Distinguishing images from text content  */
-    .rst-content img.with-border {
-	border-color: lightgrey;
+.rst-content img.with-border {
+        border-color: lightgrey;
         border-width: 2px;
         border-style: solid;
     }
@@ -126,19 +175,11 @@ details {
     }
     
 /* Left section and menu */
-    .wy-nav-side, .wy-grid-for-nav {
-	margin-left: calc(((100vw - 1100px) / 2));
-    }
-
     .wy-menu-vertical header, .wy-menu-vertical p.caption {
 	color: #000;
    	font-size: 95%;
     }
-     
-    .wy-grid-for-nav nav {
-	background: white
-    }
-    
+
     .wy-nav-content-wrap {
 	background: none;
     }
@@ -180,4 +221,3 @@ details {
      {
           margin-bottom: 4px;
      }
-}
