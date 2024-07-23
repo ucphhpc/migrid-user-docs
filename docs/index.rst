@@ -17,6 +17,7 @@ ERDA/SIF: User Guides
    :caption: ERDA User Guides
 
    sections/erda/signup/index
+   sections/erda/homepage/index
    sections/erda/files/index
    sections/erda/workgroup/index
    sections/erda/jupyter/index
