@@ -10,6 +10,6 @@ Enter a password that you want to login with and click *Save FTPS Settings*.
 Please also note the login details including the automatic username shown there.
 
 .. info::
-   Our SFTP server is more thoroughly tested and allows the stronger public key authentication, but our FTPS server may deliver higher throughput, so feel free to use either in accordance with your needs.
+   Our SFTP server is more thoroughly tested and allows the stronger public key authentication, but our FTPS server may deliver higher throughput, so feel free to use either in accordance with your needs. SFTP is what we recommend for the mast majority, however.
 
-⏩️ :doc:`Setup FileZilla up (Windows/MacOS/Linux) </sections/erda/networkdrive/ftps/filezilla>`
+⏩️ :doc:`Setup FileZilla (Windows/MacOS/Linux) </sections/erda/networkdrive/ftps/filezilla>`
