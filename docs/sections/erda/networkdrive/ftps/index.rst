@@ -9,7 +9,13 @@ You generally need to first open the *FTPS* tab on your Setup page at ERDA and c
 Enter a password that you want to login with and click *Save FTPS Settings*.
 Please also note the login details including the automatic username shown there.
 
-.. info::
+.. note::
    Our SFTP server is more thoroughly tested and allows the stronger public key authentication, but our FTPS server may deliver higher throughput, so feel free to use either in accordance with your needs. SFTP is what we recommend for the mast majority, however.
 
-⏩️ :doc:`Setup FileZilla (Windows/MacOS/Linux) </sections/erda/networkdrive/ftps/filezilla>`
+⏩️ :doc:`Setup FileZilla (Windows/MacOS/Linux) </sections/erda/networkdrive/ftps/filezilla/index>`
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   FileZilla </sections/erda/networkdrive/ftps/filezilla/index>
