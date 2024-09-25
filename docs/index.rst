@@ -31,6 +31,7 @@ ERDA/SIF: User Guides
    :caption: SIF User Guides
 
    sections/sif/signup/index
+   sections/sif/project/index
    
 .. danger::
    This documentation is WIP! We are currently focused on updating our ERDA-related resources.

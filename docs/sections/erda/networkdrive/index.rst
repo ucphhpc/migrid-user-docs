@@ -72,4 +72,4 @@ You have several options for connecting ERDA as a network drive, but below is a 
 
    WebDAVS </sections/erda/networkdrive/webdavs/index>
    SSHFS with SFTP </sections/erda/networkdrive/sshfs/index>
-   FTPS </sections/erda/nerworkdrive/ftps/index>
+   FTPS </sections/erda/networkdrive/ftps/index>
