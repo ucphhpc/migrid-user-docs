@@ -1,7 +1,7 @@
 .. _index-start:
 
-ERDA/SIF: User Guides
-=====================
+|project_name|: User Guides
+===========================
 
 .. toctree::
    :maxdepth: 2
@@ -40,7 +40,7 @@ Welcome to the documentation site for ERDA and SIF! `ERDA <https://erda.ku.dk/>`
 
 To quickly get started with ERDA or SIF, we recommend our :ref:`getting-started` page. If you are looking for something specific, the search functionality and the sidebar on the left is a good way to find what you are looking for!
 
-|:file_cabinet:| About ERDA
+|:file_cabinet:| About |project_name|
     ERDA (Electronic Research Data Archive) at the University of Copenhagen (KU/UCPH) is meant for storing,
     sharing, analyzing and archiving research data. ERDA delivers safe central storage space for ones own
     and shared files, interactive analysis tools in addition to archiving for safe-keeping and publishing.

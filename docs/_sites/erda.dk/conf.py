@@ -1,12 +1,30 @@
 # Configuration file for the modi-helper-scripts documentation site.
 # import sphinx_rtd_theme
 
+from configparser import ConfigParser
+import os
+from types import SimpleNamespace
+
+_SITE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def _sitevars_and_epilog():
+    parser = ConfigParser()
+    parser.read(os.path.join(_SITE_DIR, "variables.ini"))
+
+    sitevars = SimpleNamespace(**parser['site'])
+
+    epilog_lines = [".. |%s| replace:: %s" % (k, v) for k, v in sitevars.__dict__.items()]
+    epilog = '\n'.join(epilog_lines)
+
+    return sitevars, epilog
+
 # -- Project information -----------------------------------------------------
 
-project = "ERDA & SIF support"
+sitevars, rst_epilog = _sitevars_and_epilog()
+project = "%s support" % (sitevars.project_name,)
 copyright = "2023 SCIENCE HPC Center Support Team"
 author = "SCIENCE HPC Center Support Team"
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -27,7 +45,7 @@ templates_path = ["_templates"]
 exclude_patterns = []
 
 # HTML logo which will show on top of the sidebar
-html_logo = "_static/faelles.svg"
+html_logo = "../../_static/faelles.svg"
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -39,7 +57,7 @@ html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
+html_static_path = ["../../_static"]
 html_css_files = ["custom.css"]
 # Favicon for browsertab etcetera
-html_favicon = '_static/favicon.ico'
+html_favicon = '../../_static/favicon.ico'

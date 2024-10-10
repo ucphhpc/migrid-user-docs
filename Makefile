@@ -1,7 +1,9 @@
+BRANDING     := erda.dk
+CONFIGDIR     = "./docs/_sites/$(BRANDING)"
 SPHINXBUILD   = ./.venv/bin/sphinx-build
-SPHINXOPTS    =
+SPHINXOPTS    = -c "$(CONFIGDIR)"
 SOURCEDIR     = docs
-BUILDDIR      = build
+BUILDDIR      = "build/$(BRANDING)"
 
 # Put it first so that "make" without argument is like "make help".
 .PHONY: help
