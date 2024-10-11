@@ -3,26 +3,6 @@
 Setup SSHFS with SFTP on Windows
 ================================
 
-SFTP is a secure and efficient file transfer protocol similar to the old FTP protocol, but with proper security built in.
-It relies on the security mechanisms of the `OpenSSH <http://www.openssh.com/>`_ suite of applications and it is supported
-by a number of clients on all popular platforms. Some platforms even integrate it natively in the general file manager, so that no extra software is required.
-
-
-.. _erda-networkdrive-wsftpsetup:
-
-Setup SSHFS
------------
-To setup SSHFS, go onto the ERDA user homepage, and press the avatar icon in the bottom left corner, and then on "Setup".
-
-Click on the "SFTP" tab, and either create a new, separate password for your SFTP access in the field under "Password" or add your public key if you prefer that way. If you choose the password route, the password must consist of at least eight characters and contain a combination of lowercase and uppercase letters, numbers, and special characters (at least three out of the four types mentioned).
-
-After you have concluded this step, click on "Save SFTP Settings".
-
-.. image:: /images/networkdrive/networkdrive-loginmethod.png
-
-From here, you click on the fold-out menu called "SSHFS/SFTP Network Drive" and copy the path starting with "\\sshfs\" as you will need it momentarily.
-
-
 .. _erda-networkdrive-wsftpinstall:
 
 Install WinFsp and SSHFS-Win
