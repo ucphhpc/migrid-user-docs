@@ -3,7 +3,7 @@
 Getting Started
 ===============
 
-`ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ are two services provided by the University of Copenhagen
+`ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ are two services provided by SCIENCE at University of Copenhagen
 for storing, sharing, and analyzing research data. ERDA is intended for general scientific data, while SIF is intended for highly sensitive data.
 
 
