@@ -3,13 +3,6 @@
 Setup SSHFS with SFTP on macOS
 ==============================
 
-SFTP is a secure and efficient file transfer protocol similar to the old FTP protocol, but with proper security built in.
-It relies on the security mechanisms of the `OpenSSH <http://www.openssh.com/>`_ suite of applications and it is supported
-by a number of clients on all popular platforms. Some platforms even integrate it natively in the general file manager, so that no extra software is required.
-
-If you have a newer Mac with Apple Silicon, then you will need to follow the below subsection. Otherwise, you can proceed to :ref:`erda-networkdrive-msftpsetup` section.
-
-
 .. _erda-networkdrive-applesilicon:
 
 Macs with Apple Silicon
