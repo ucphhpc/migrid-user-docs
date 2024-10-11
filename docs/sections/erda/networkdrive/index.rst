@@ -63,9 +63,13 @@ You have several options for connecting ERDA as a network drive, but below is a 
 ⏩️ :doc:`SSHFS with SFTP </sections/erda/networkdrive/sshfs/index>`
    SSHFS with SFTP is another popular option to access remote storage that uses the SSH File Transfer Protocol, and is the more robust, but more complex option.
 
+⏩️ :doc:`FTPS </sections/erda/networkdrive/ftps/index>`
+   FTPS is another secure and efficient file transfer protocol built on top of the old FTP protocol, but with proper security added.
+
 .. toctree::
    :maxdepth: 3
    :hidden:
 
    WebDAVS </sections/erda/networkdrive/webdavs/index>
    SSHFS with SFTP </sections/erda/networkdrive/sshfs/index>
+   FTPS </sections/erda/networkdrive/ftps/index>
