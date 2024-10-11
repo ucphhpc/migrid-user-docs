@@ -75,13 +75,13 @@ Schedule Tasks
 ++++++++++++++
 
 The **Schedule Tasks** button leads to our page for scheduling tasks via cron jobs or at jobs.
-You can read more about how to use this at the bottom of that page, with a more in-depth guide being WIP.
+You can read more about how to use this at the bottom of that page.
 
 
 Data Transfers
 ++++++++++++++
 
-WIP
+The **Data Transfers** button leads to our page for managing data transfers to set up and monitor transfers, and is also where you can set up transfer keys.
 
 
 Cloud

@@ -8,6 +8,7 @@ Sign up as an ERDA user
    This page is designed to help you get started with using `ERDA <https://erda.ku.dk/>`_. For SIF, check out :ref:`sif-signup-start`.
 
 You can sign up to ERDA either as a UCPH employee/student (:ref:`erda-signup-ucph`) or as an external collaborataion partner (:ref:`erda-signup-external`), and you must sign up before you can access ERDA.
+
 In addition, to further protect your account, we recommend that you check our section on :ref:`erda-signup-twofactor`.
 
 .. _erda-signup-ucph:

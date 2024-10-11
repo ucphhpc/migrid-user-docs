@@ -7,8 +7,7 @@ Getting Started
 for storing, sharing, and analyzing research data. ERDA is intended for general scientific data, while SIF is intended for highly sensitive data.
 
 
-This page is designed to help you get started with using ERDA and SIF. We have gathered information about both systems and their supported software,
-with links to our written resources.
+This page is designed to help you get started with using ERDA and SIF. We have gathered information about both systems and their supported software, with links to our written resources. You can also look in the left pane for additional resources.
 
 ERDA
 ----
@@ -20,12 +19,12 @@ ERDA
 * :ref:`erda-seafile-share`
 * :ref:`erda-jupyter-start`
 * `MODI helper scripts <https://modi-helper-scripts.readthedocs.io/en/latest/index.html>`_
-* ERDA Overview if you're not sure whether to use ERDA's main storage or Seafile
-* User Guide with general usage instructions
-* We strongly recommend reading and following at least the first intro guide if you want to use ERDA.
+* ERDA Overview if you're not sure whether to use ERDA's main storage or Seafile (WIP)
+* User Guide with general usage instructions (WIP)
 
 
 SIF
 ---
 
-WIP
+* :ref:`sif-sighnup-start`
+* :ref:`sif-project-start`
