@@ -19,18 +19,23 @@ This section shows how to secure your data inside ERDA itself. It can increase l
 An *archive* is a snapshot of one or more files in ERDA. They are preserved in the state of creation time.
 Think of a taking a still picture or creating a zip file; the original files are subject to change, while the archive are frozen in time.
 
-.. raw:: html
 
-   <details>
-   <summary><a>Example box that can expand</a></summary>
+.. accordion:: Accordion element collapsed by default.
 
-.. code-block:: python
+   .. accordion:: Accordion inside another. Set with option :expand:
+       :expand:
 
-   code_example = "This is an example"
+       Yet another accordion in expanded state.
 
-.. raw:: html
+   .. accordion:: Plain accordion. Collapsed state is the default
 
-   </details>
+       Yet another accordion. Yihaa!
+       
+
+.. lightbox:: gnu.webp
+    :alt: GNU logo
+    :caption: The GNU logo
+    :percentage: 30 95
 
 Benefits of copying files into an archive:
  * frozen archives are stored in separate physical location

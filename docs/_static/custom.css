@@ -64,7 +64,7 @@ body {
         border-style: solid;
     }
 
-/* Details expand-collaps boxes */
+/* Details expand-collaps boxes 
 summary {
   list-style: none;
   display: flex;
@@ -75,11 +75,11 @@ summary {
   font-size: 15px;
   background: lightgrey;
   padding: 3px 2px 0 5px;
-}
+} */
 .wy-nav-content a {
   color: #666 !important;
 }
-
+/*
 summary::after {
   content: '';
   width: 18px;
@@ -114,7 +114,7 @@ details {
   border: 1px solid #666;
   margin-bottom: 10px;
 }
-
+*/
 
     /* Coloring */    
     .rst-content .note .admonition-title, 
