@@ -1,0 +1,62 @@
+.accordion {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.accordion summary {
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    list-style: none;
+    background-color: #f0f0f0;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
+.accordion[open] > summary::after {
+    content: '-';
+}
+
+.accordion .highlight-python {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+/* Nested accordions */
+.accordion .accordion {
+    margin: 10px 0;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.accordion .accordion summary {
+    background-color: #e6e6e6;
+}
+
+.accordion .accordion .highlight-python {
+    background-color: #f9f9f9;
+}
+
+.accordion-content {
+    padding: 10px;
+}
+
+.accordion-content .highlight-python {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
