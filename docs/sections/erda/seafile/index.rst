@@ -1,16 +1,20 @@
 .. _erda-seafile-start:
+.. include:: /shared.rst
 
 =========================
 Seafile: Personal storage
 =========================
 
-ERDA Seafile is a file/folder synchronization and data sharing service similar to Dropbox/OneDrive/Google Drive/iCloud - But with the advantage that your data are stored internally and securely at UCPH.
-Seafile provides sharing capabilities which can be used to share data with internals and externals, and in that context it is left to the users to adhere to rules and regulations about confidentiality and
-sensitive private data.
+|migrid| Seafile gives you secure file/folder storage, synchronisation, and sharing capabilities, similar to Dropbox, OneDrive, Google Drive, and iCloud.
+
+You get the advantage that your data are stored internally and securely at UCPH's own infrastructure.
+
+Seafile provides sharing capabilities which can be used to share data with internals and external.
+In that context it is left to the users to adhere to rules and regulations about confidentiality and sensitive private data.
 
 .. NOTE:
-   All data are sent through a secure connection to the ERDA storage,
-   and users can additionally choose to have their synchronized data encrypted locally before ever
+   All data are sent through a secure connection to the |migrid| storage,
+   and users can additionally choose to have their synchronised data encrypted locally before ever
    sending it over the network to the storage. This means that data are significantly better protected
    against eavesdropping by strangers. The optional encryption is done with the AES 256 algorithm,
    which 'Datatilsynet' and other authorities define as a suitable algorithm for strong encryption.
@@ -20,14 +24,32 @@ sensitive private data.
 Getting Started with Seafile
 ============================
 
-In order to use Seafile, you need to log onto ERDA. Once on the user homepage, click the green avatar icon in the bottom left corner, and click "Setup".
+| **Step 1**: Regster for Seafile account
+| In order to use Seafile, you need to log onto ERDA. Once on the user homepage, click the green avatar icon in the bottom left corner, and click "Setup".
 
 
-Click on the "Seafile" tab, and create a new password for your Seafile. The password must consist of at least eight characters and must contain a combination of lowercase and uppercase letters, digits and special characters (at least three of the four types mentioned). Confirm the password once more and click "Register".
+| **Step 2**: Create a password for your Seafile
+| Click on the "Seafile" tab, and create a new password for your Seafile. The password must:
 
-Once you have completed registration, ERDA administrators will be notified and will activate your Seafile account, and you will receive an email when your account is ready.
 
-When it is ready, navigate back to the Seafile Setup page and click on the "log in" button under Login and Install, or click on the link in the email directly.
+* Contain at least eight characters
+* Include a combination of at least three of these:
+
+  * Lowercase letters
+  * Uppercase letters
+  * Digits
+  * Special characters
+
+
+Confirm the password once more and click "Register".
+
+
+| **Step 3**: Await activation of your account
+| Once you have completed registration, |migrid| administrators will be notified and will activate your Seafile account, and you will receive an email when your account is ready.
+
+
+| **Step 4**: Login and Install Seafile
+| When it is ready, navigate back to the Seafile Setup page and click on the "log in" button under Login and Install, or click on the link in the email directly.
 
 Once on the Seafile login page, you just need to enter your email address and your newly chosen password for your Seafile account, before pressing "Log In".
 
@@ -39,7 +61,7 @@ About libraries
 
 Seafile organizes your folders and files in "Libraries". This is a logical collection of folders and files that makes them easier to manage and optionally share with others. You can create a new library by clicking "New Library" before being prompted to write a descriptive title before you can finally click "Submit". In this prompt, you can choose to tick "Encrypt" and create a separate encryption password, and the data within will automatically be encrypted before being saved centrally.
 
-In your new library, you can manually upload files and folders that you want to synchronize or share by clicking "Upload" and selecting said files and folders.
+In your new library, you can manually upload files and folders that you want to synchronise or share by clicking "Upload" and selecting said files and folders.
 
 You can also install the Seafile client and use it to enter data automatically from your computer, as we will discuss in the next section.
 
@@ -52,7 +74,7 @@ Seafile Client
 Install Seafile Client
 ----------------------
 
-To synchronize Seafile Library data with your computer, you can download and install the Seafile client. This can be installed on as many computers as you like. You can find a link to `Seafile Client <https://www.seafile.com/en/download/>`_ either on the bottom of the Seafile page, or by clicking on the link in this section. On the page, click on the client that is relevant for you.
+To synchronise Seafile Library data with your computer, you can download and install the Seafile client. This can be installed on as many computers as you like. You can find a link to `Seafile Client <https://www.seafile.com/en/download/>`_ either on the bottom of the Seafile page, or by clicking on the link in this section. On the page, click on the client that is relevant for you.
 
 
 Tips for installation on a UCPH computer
@@ -78,16 +100,16 @@ Once the client has been installed, you will find a small Seafile icon in your s
 Synchronize Files
 -----------------
 
-In order to synchronize files, you can click on the orange icon in your system tray to open and manage your Seafile client.
+In order to synchronise files, you can click on the orange icon in your system tray to open and manage your Seafile client.
 
-Right-click your Seafile client in the library you want to synchronize. In the example below, a library has been set up with the title "Project e-infrastructure", and you must click the "Sync this library" button to make it manually synchronize.
+Right-click your Seafile client in the library you want to synchronise. In the example below, a library has been set up with the title "Project e-infrastructure", and you must click the "Sync this library" button to make it manually synchronize.
 
 .. image:: /images/seafile/seafile-sync.png
 
-You may be prompted to select which path on your hard drive to synchronize to. Choose this before clicking "OK".
+You may be prompted to select which path on your hard drive to synchronise to. Choose this before clicking "OK".
 
 .. NOTE::
-   When the synchronization of a library is initiated, the cloud icon will change to show the progress, and the cloud will turn green once the process is complete. This is also visible from within the Seafile client.
+   When the synchronisation of a library is initiated, the cloud icon will change to show the progress, and the cloud will turn green once the process is complete. This is also visible from within the Seafile client.
 
 
 .. _erda-seafile-share:

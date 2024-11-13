@@ -13,7 +13,7 @@ Create a project and share it with others
 =========================================
 
 .. note::
-   It is only possible to create a project as a UCPH employee, so external collaborators will have to rely on an employees from UCPH.
+   It is only possible to create a project as a UCPH employee, so external collaborators will have to rely on an employee from UCPH.
 
 .. _sif-project-create-login:
    
@@ -59,17 +59,18 @@ Click on the 'Create Project' tab, and create the project data category:
 * General Sensitive Data:
   Must be selected if your project does not require pre-approval by the legal department.
   
-
+|
   
 Enter Workzone number
 ^^^^^^^^^^^^^^^^^^^^^
 
 When you select 'Personal Data' or 'Data Subject to an Agreement', you need to supply the Workzone number of the project.
 
-To create a project in SIF with personal data, you *always* have to obtain prior approval from the FacultySecretariat.
-Contact your `faculty's legal department <https://kunet.ku.dk/work-areas/research/data/personal-data/safe-storage/Pages/default.aspx>`_ for advice (See the contact box on the right-hand side of the link).
-The approval email that you subsequently receive contains the Workzone number you need to use.
+| To create a project in SIF with personal data, you *always* have to obtain prior approval from the Faculty Secretariat.
+| Contact your faculty's `legal department <https://kunet.ku.dk/work-areas/research/data/personal-data/safe-storage/Pages/default.aspx>`_ for advice (See the contact box on the right-hand side of the link).
+| The approval email that you subsequently receive contains the Workzone number you need to use.
 
+|
 
 Enter name
 ^^^^^^^^^^
@@ -80,6 +81,7 @@ Click 'Create'.
 
 The faculty's legal department will automatically be informed that you have created the project and can check the details in Workzone.
 
+|
 
 .. _sif-project-invite-participant:
 
@@ -106,6 +108,7 @@ An email will now be sent to the address you provided.
 .. note::
    If you want to give a partner outside UCPH access to a project with sensitive personal data, you should first agree with the `faculty's legal department <https://kunet.ku.dk/work-areas/research/data/personal-data/Pages/default.aspx>`_ that the external party may be granted access.
 
+|
 
 .. _sif-project-remove-participant:
 
@@ -123,6 +126,7 @@ Select the participant you want to remove from the project in the green dropdown
 
 Click 'Remove'.
 
+|
 
 .. _sif-project-open-project:
 
@@ -139,7 +143,7 @@ If you want to leave the window with the open project and return to the screen i
    As a project owner, you can see data about your specific project under 'Project Info'.
    Here you can see creation data, project owner, data category, Workzone number and active project participants.
 
-
+|
 
 .. _sif-project-get-access:
 
@@ -154,7 +158,7 @@ Get Project access with a UCPH account
 A project owner has invited you to participate in a project on SIF.
 You will receive an email from SIF once you have received an invitation to the project.
 
-Go to `https://sif.ku.dk/ <https://sif.ku.dk>`_, and click 'log in'.
+Go to `SIF Portal (https://sif.ku.dk) <https://sif.ku.dk>`_, and click 'log in'.
 
 Click the 'Accept Invitation' tab.
 
@@ -162,6 +166,7 @@ In the green dropdown menu under 'Accept project invitation', select the specifi
 
 Click 'Accept' and you will arive at the 'Open Project' tab, where you can select the project and start working in it.
 
+|
 
 .. _sif-project-ext-access:
 
@@ -170,7 +175,7 @@ Get Project access as an external user
 
 If a project owner at the University of Copenhagen has invited you to work on a project on SIF, you will receive an email from SIF once you have been invited to the project.
 
-Log on to `https://sif.ku.dk/ <https://sif.ku.dk>`_ after you have received an email about access.
+Log on to `SIF page (https://sif.ku.dk) <https://sif.ku.dk>`_ after you have received an email about access.
 
 Click the 'External users' tab and click 'log in'.
 

@@ -41,15 +41,104 @@
     margin-top: 1em;
 }
 
-.close-btn {
-    color: #fff;
+.close-btn-side {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
+    right: -40px;
+    top: 0;
+    font-size: 24px;
     cursor: pointer;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+}
+
+.close-btn-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
 .lightbox-toggle:checked ~ .lightbox {
     display: block;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.close-btn-side {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 3em;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    display: block;
+}
+
+.close-btn-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.caption-overlay {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.caption-below {
+    margin-top: 10px;
+    display: block;
+}
+
+.caption-overlay, .caption-below {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Switch to overlay mode when vertical space is limited */
+@media (max-height: 95vh) {
+    .caption-below {
+        display: none;
+    }
+    .caption-overlay {
+        display: block;
+    }
+}
+
+/* Switch close button to overlay when horizontal space is limited */
+@media (max-width: 95vw) {
+    .close-btn-side {
+        display: none;
+    }
+    .close-btn-overlay {
+        display: block;
+    }
+}
+
+.with-border {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }

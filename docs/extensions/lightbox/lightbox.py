@@ -40,7 +40,8 @@ class Lightbox(Directive):
         .. lightbox:: path/to/image.jpg
            :alt: Alternative text for the image
            :caption: A caption for the image
-           :percentage: 50 80
+           :percentage: 50 80 95
+           :class: border-box
     """
 
     has_content = True
@@ -51,7 +52,9 @@ class Lightbox(Directive):
         'alt': directives.unchanged,
         'caption': directives.unchanged,
         'percentage': directives.positive_int_list,
+        'class': directives.unchanged,
     }
+
 
     def run(self):
         """
@@ -65,16 +68,24 @@ class Lightbox(Directive):
         alt_text = self.options.get('alt', '')
         caption = self.options.get('caption', '')
         percentages = self.options.get('percentage', [])
+        custom_class = self.options.get('class', '')
 
+        # Set default values for thumbnail_width, lightbox_width, and height_style. Can be overridden by percentage option.
+        # Initial value uses full width, or with of the image.
         thumbnail_width = '100%'
-        lightbox_width = '100%'
+        # Initial value uses 95 % of width, specifically to allow for Close image icon.
+        # Initial value uses 95 % of height, specifically to allow for caption text.
 
+        # Inside the run() method
         if percentages:
-            # The first percentage is the thumbnail width according to container width.
             thumbnail_width = f'{percentages[0]}%'
             if len(percentages) > 1:
-                # vw is a CSS unit that represents a percentage of the viewport width
-                lightbox_width = f'{percentages[1]}vw'
+                scale_percentage = percentages[1]
+                # Use min() function in CSS to automatically choose the constraining dimension
+                size_style = f"""
+                    width: min({scale_percentage}vw, calc({scale_percentage}vh * var(--aspect-ratio)));
+                    height: min({scale_percentage}vh, calc({scale_percentage}vw / var(--aspect-ratio)));
+                """
 
         # Generate a unique ID for the checkbox
         checkbox_id = f"lightbox-{env.new_serialno('lightbox')}"
@@ -82,9 +93,13 @@ class Lightbox(Directive):
         # Construct the full source path
         src_image_path = os.path.join(env.srcdir, image_path)
 
-        # Copy the image to _static directory
+        # Copy the image to _static directory while preserving subdirectories
         static_dir = '_static'
-        new_image_path = os.path.join(static_dir, os.path.basename(image_path))
+        rel_path = os.path.relpath(image_path)
+        new_image_path = os.path.join(static_dir, rel_path)
+
+        # Create subdirectories if they don't exist
+        os.makedirs(os.path.dirname(os.path.join(env.app.outdir, new_image_path)), exist_ok=True)
 
         try:
             copy_asset_file(src_image_path, os.path.join(env.app.outdir, new_image_path))
@@ -95,24 +110,28 @@ class Lightbox(Directive):
         # Generate the correct relative path
         current_page_path = env.docname
         image_url = relative_uri(current_page_path, new_image_path)
-
         # Use image_url in your HTML generation
         html = f"""
         <label for="{checkbox_id}">
-            <img src="{image_url}" alt="{alt_text}" class="lightbox-trigger" style="width: {thumbnail_width};">
+            <img src="{image_url}" alt="{alt_text}" class="lightbox-trigger {custom_class}" 
+                style="width: {thumbnail_width};">
         </label>
         <input type="checkbox" id="{checkbox_id}" class="lightbox-toggle">
         <div class="lightbox">
-            <label for="{checkbox_id}" class="close-btn">×</label>
             <label for="{checkbox_id}">
-                <div class="lightbox-content">
-                    <img src="{image_url}" alt="{alt_text}" style="width: {lightbox_width};">
-                    <p class="lightbox-caption">{caption}</p>
+                <div class="lightbox-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="image-container" style="text-align: center;">
+                        <img src="{image_url}" alt="{alt_text}" class="{custom_class}" style="{size_style}"
+                            onload="this.style.setProperty('--aspect-ratio', this.naturalWidth / this.naturalHeight);">
+                        <div class="caption-overlay" style="text-align: center;">{caption}</div>
+                        <label for="{checkbox_id}" class="close-btn-overlay">×</label>
+                    </div>
+                    <p class="caption-below" style="text-align: center;">{caption}</p>
+                    <label for="{checkbox_id}" class="close-btn-side">×</label>
                 </div>
             </label>
         </div>
         """
-
         return [nodes.raw('', html, format='html')]
 
 def setup(app):

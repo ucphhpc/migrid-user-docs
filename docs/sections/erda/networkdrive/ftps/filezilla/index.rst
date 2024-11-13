@@ -9,5 +9,5 @@ In FileZilla open the Site Manager e.g. from the File menu and create a New Site
 First time you connect you are asked to verify the ERDA server fingerprint, which you can find on your ERDA FTPS Setup page.
 If you don't want to repeat this every time you can tick the *Always trust certificate in future sessions* box before you choose OK to connect.
 
-.. info::
+.. note::
    Please note that the fingerprint changes occasionally so you may need to repeat this step some months later.

@@ -1,4 +1,88 @@
+/*
+Modifications for the Sphinx based Read the Docs theme sphinx_rtd_theme.
+Changes are made in order to adhere to University of Copenhagen's style guide.
+*/
+a {
+	color: #679c5b;
+}
 
+body {
+	font-family: "Open Sans",Helvetica,Arial,sans-serif
+}
+.wy-side-nav-search {background-color: white;}
+.wy-menu-vertical a {color: #252525;}
+.wy-menu-vertical li.current > a {color:#901a1e;}
+
+.wy-menu-vertical a:hover {
+    background-color:#eee;
+	cursor:pointer;
+	color: #901a1e !important;
+}
+.wy-menu-vertical p.caption {color: #252525;}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {background: #eee;border:0;}
+@media screen and (max-width: 1100px) {
+  .wy-nav-content-wrap {
+    margin-left: 0;
+  }
+
+  .wy-nav-side {
+    left: -300px;
+  }
+
+  .wy-nav-side.shift {
+    left: 0px;
+    width: 300px;
+    background: unset;
+  }
+
+  .wy-nav-content-wrap.shift {
+    position: fixed;
+    min-width: 100%;
+    left: 300px;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .wy-menu.wy-menu-vertical, .wy-side-nav-search, .wy-side-scroll {
+    width: 300px;
+  }
+
+  .wy-nav-top {
+    display: block;
+    background: white;
+  }
+
+  [data-toggle="wy-nav-top"] {
+      color: #404040;
+  }
+
+  nav.wy-nav-top a {
+    color: #404040;
+    font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif;
+    font-size: 200%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .wy-grid-for-nav nav {
+   background: white;
+  }
+}
+
+/* Distinguishing images from text content  */
+.rst-content img.with-border {
+        border-color: lightgrey;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+
+.wy-nav-content a {
+  color: #2c6694;
+  text-decoration: underline;
+    
 a {
 	color: #679c5b;
 }
@@ -37,7 +121,7 @@ body {
 
   .wy-nav-top {
     display: block;
-    background: #c9c9c9;
+    background: white;
   }
 
   [data-toggle="wy-nav-top"] {
@@ -64,57 +148,83 @@ body {
         border-style: solid;
     }
 
-/* Details expand-collaps boxes 
-summary {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  width: 100%;
-  font-size: 15px;
-  background: lightgrey;
-  padding: 3px 2px 0 5px;
-} */
+
 .wy-nav-content a {
-  color: #666 !important;
-}
-/*
-summary::after {
-  content: '';
-  width: 18px;
-  height: 10px;
-  background: url('arrow_down.svg') no-repeat;
-  background-size: 14px;
-  margin-left: .75em;
-  transition: 0.2s;
+    color: #666 !important;
+    
+a {
+	color: #679c5b;
 }
 
-details[open] > summary::after {
-  transform: rotate(180deg);
-  position: relative;
-  bottom: 2px;
-  right: 4px;
+body {
+	font-family: "Open Sans",Helvetica,Arial,sans-serif
 }
 
-summary::-webkit-details-marker {
-  display: none;
+@media screen and (max-width: 1100px) {
+  .wy-nav-content-wrap {
+    margin-left: 0;
+  }
+
+  .wy-nav-side {
+    left: -300px;
+  }
+
+  .wy-nav-side.shift {
+    left: 0px;
+    width: 300px;
+    background: unset;
+  }
+
+  .wy-nav-content-wrap.shift {
+    position: fixed;
+    min-width: 100%;
+    left: 300px;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .wy-menu.wy-menu-vertical, .wy-side-nav-search, .wy-side-scroll {
+    width: 300px;
+  }
+
+  .wy-nav-top {
+    display: block;
+    background: white;
+  }
+
+  [data-toggle="wy-nav-top"] {
+    color: #404040;
+  }
+
+  nav.wy-nav-top a {
+    color: #404040;
+    font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif;
+    font-size: 200%;
+  }
 }
 
-summary {
-  border-radius: 0px;
+@media screen and (min-width: 1100px) {
+  .wy-grid-for-nav nav {
+    background: white;
+  }
 }
 
-details[open] summary {
-  border-radius: 0px 0px 0 0;
+/* Distinguishing images from text content  */
+.rst-content img.with-border {
+        border-color: lightgrey;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+
+.wy-nav-content a {
+  color: #2c6694;
+  text-decoration: underline;
+}
+    
 }
 
-details {
-  border-radius: 0px;
-  border: 1px solid #666;
-  margin-bottom: 10px;
-}
-*/
 
     /* Coloring */    
     .rst-content .note .admonition-title, 
@@ -200,13 +310,9 @@ details {
 	background: lightgrey
     }
      
-    .wy-menu-vertical a:hover {
-	background-color:lightgray;
-	cursor:pointer
-    }
      
     .wy-side-nav-search {
-	background: white;
+	background: white !important;
     }
      
     .wy-side-nav-search input[type="text"] {
