@@ -87,28 +87,38 @@ The **Data Transfers** button leads to our page for managing data transfers to s
 Cloud
 +++++
 
-WIP
+The **Cloud** button leads to the page of the cloud nodes provided by Multi-purpose Infrastructure Service Tools (MIST), which can be used for application or service hosting requiring a flexible software environment and small to intermediate computation needs.
+
+Instances are not time limited and can be resumed from any client. The spawned instances are persistent, meaning that any change made during a session is preserved even if the server is terminated.
+
+.. info::
+   Our Cloud services are currently in beta testing and access is only granted for a limited set of users who are already experienced with remote Linux system management over SSH. If you fit in that category and would like to join the testing, please get in touch.
 
 
 People
 ++++++
 
-WIP
+The **People** button leads to a list of ERDA users, with most of them anonymized with a unique ID.
 
 
 Downloads
 +++++++++
 
-WIP
+The **Downloads** button leads to a page that provides access to on-demand downloads of the UCPH ERDA user scripts in all its available formats.
 
 
 Peers
 +++++
 
-WIP
+The **Peers** button leads to the Peers page, which employees at UCPH can use to vouch for external peers to let them have an account for collaboration or course activities.
+This includes a list of people you have vouched for.
 
 
 Docs
 ++++
 
-WIP
+The **Docs** button leads to the integrated help system for UCPH ERDA.
+You can search for a documentation topic or select the particular section directly.
+Please note that the integrated help is rather limited to short overviews and technical specifications.
+
+You can find more user friendly tutorials and examples on the official site support pages.
