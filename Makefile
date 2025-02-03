@@ -20,6 +20,10 @@ dependencies: ./.venv/pyvenv.cfg ./requirements.txt
 ./requirements.txt:
 	@
 
+.PHONY: test-build
+test-build: dependencies
+	@$(SPHINXBUILD) -W "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 .PHONY: Makefile
