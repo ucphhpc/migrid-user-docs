@@ -91,7 +91,7 @@ The **Cloud** button leads to the page of the cloud nodes provided by Multi-purp
 
 Instances are not time limited and can be resumed from any client. The spawned instances are persistent, meaning that any change made during a session is preserved even if the server is terminated.
 
-.. info::
+.. note::
    Our Cloud services are currently in beta testing and access is only granted for a limited set of users who are already experienced with remote Linux system management over SSH. If you fit in that category and would like to join the testing, please get in touch.
 
 
