@@ -146,6 +146,9 @@ $RECYCLE.BIN/
 .vale.ini
 styles/
 
+# python
+__pycache__/
+
 # Ignore build dir in Sphinx + more
 .venv/
 build/
