@@ -110,6 +110,7 @@ An email will now be sent to the address you provided.
 
 |
 
+
 .. _sif-project-remove-participant:
 
 Remove Participant from Project
@@ -128,6 +129,20 @@ Click 'Remove'.
 
 |
 
+
+.. _sif-project-reassign-owner:
+
+Reassign Owner
+--------------
+
+If the owner is leaving the project, or a change of owner becomes necessary, it is possible to reassign owner of the project.
+
+Press the 'Reassign Owner' tab.
+
+Select your project in the green dropdown menu under 'Reassign ownership for project', and select the participant you want to assign as the new owner in the green dropdown menu that appear as 'To participant', before clicking 'Reassign'.
+
+|
+           
 .. _sif-project-open-project:
 
 Open Project
@@ -142,6 +157,19 @@ If you want to leave the window with the open project and return to the screen i
 .. note::
    As a project owner, you can see data about your specific project under 'Project Info'.
    Here you can see creation data, project owner, data category, Workzone number and active project participants.
+
+|
+
+.. _sif-project-delete-project:
+
+Delete Project
+--------------
+
+If the owner of the project for some reason want to delete a project, it is possible to remove a project.
+
+Press the 'Remove Project' tab, and select the project you wish to delete in the green dropdown menu under 'Remove project', and select the project you want to delete, before clicking 'Remove'.
+
+This will remove all participants of the project, and delete all data associated with the project.
 
 |
 
@@ -184,3 +212,6 @@ Enter your email and the apssword you chose when you signed up for SIF. Click 'y
 In the green dropdown menu under 'Accept project invitation', select the specific project on which you intend to work and click 'Accept'.
 
 You will then arrive at the 'Open Project' tab. Here you can select the project and start working in it.
+
+
+
