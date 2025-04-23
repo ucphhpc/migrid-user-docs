@@ -41,7 +41,7 @@ Welcome to the documentation site for ERDA and SIF! `ERDA <https://erda.ku.dk/>`
 
 To quickly get started with ERDA or SIF, we recommend our :ref:`Getting Started <gettingstarted_intro>` page. If you are looking for something specific, the search functionality and the sidebar on the left is a good way to find what you are looking for!
 
-Make sure to read the terms you agree to when you use ERDA `here <https://erda.ku.dk/terms.html>`_ and for SIF at the bottom of its `front page <https://sif.ku.dk/>`_.
+Make sure to read the `terms <https://erda.ku.dk/terms.html>`_ you agree to when you use ERDA and for SIF at the bottom of its `front page <https://sif.ku.dk/>`_.
 
 In short the terms should follow common sense, e.g. it is your responsibility to only store data that you actually have the right to store, and to keep your login safe and secret to prevent others from access to your account.
 
