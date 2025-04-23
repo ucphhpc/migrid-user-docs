@@ -41,6 +41,13 @@ Welcome to the documentation site for ERDA and SIF! `ERDA <https://erda.ku.dk/>`
 
 To quickly get started with ERDA or SIF, we recommend our :ref:`Getting Started <gettingstarted_intro>` page. If you are looking for something specific, the search functionality and the sidebar on the left is a good way to find what you are looking for!
 
+Make sure to read the `terms <https://erda.ku.dk/terms.html>`_ you agree to when you use ERDA and for SIF at the bottom of its `front page <https://sif.ku.dk/>`_.
+
+In short the terms should follow common sense, e.g. it is your responsibility to only store data that you actually have the right to store, and to keep your login safe and secret to prevent others from access to your account.
+
+.. important:: Please carefully read about data replication and backup in our FAQ on the `front page of ERDA <https://erda.ku.dk/>`_ to make sure you are fully aware exactly what we do and don’t offer and what your own responsibilities are regarding data safety.
+               This is relevant both in regard to our terms of use and fulfilling the requirements of the `mandatory data classification at UCPH <https://kunet.ku.dk/employee-guide/Pages/Safety-and-Emergency-Preparedness/Information-Security.aspx>`_.
+
 
 |:file_cabinet:| About ERDA
     ERDA (Electronic Research Data Archive) at the University of Copenhagen (KU/UCPH) is meant for storing,
