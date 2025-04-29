@@ -34,6 +34,7 @@ ERDA/SIF: User Guides
 
    sections/sif/signup/index
    sections/sif/project/index
+   sections/sif/networkdrive/index
 
 
 Welcome to the documentation site for ERDA and SIF! `ERDA <https://erda.ku.dk/>`_ and `SIF <https://sif.ku.dk/>`_ simplifies storing, sharing, analyzing and archiving research data for KU/UCPH employees, their collaboration partners, and KU/UCPH students.
