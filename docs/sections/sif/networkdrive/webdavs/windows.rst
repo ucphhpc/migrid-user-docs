@@ -22,7 +22,7 @@ Click OK to login and complete the wizard. Your SIF files and folders should app
 
 As long as you are online you can use the files there just like your local files. When you are done working on the data, you can right-click the mapped drive and select *Disconnect* to close the mapping.
 
-Netxt time you start your computer you can easily access the project data again using the saved mapped drive from the same **Computer** location.
+Next time you start your computer you can easily access the project data again using the saved mapped drive from the same **Computer** location.
 Importantly you need to always log in first and provide your two-factor token on the SIF web page before you can access the mapped drive.
 
 It is also possible to make the remote content available as a so-called network location by filling in the server URL from above directly in the *Folder* field of the **Add network location** wizard.
