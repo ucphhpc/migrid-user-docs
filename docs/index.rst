@@ -26,6 +26,7 @@ ERDA/SIF: User Guides
    sections/erda/networkdrive/index
    sections/erda/seafile/index
    sections/erda/archiving/index
+   sections/erda/scheduletask/index
 
 .. toctree::
    :maxdepth: 2
