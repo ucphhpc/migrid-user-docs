@@ -53,7 +53,7 @@ you make are applied directly to the files in ERDA.
 Disconnect Network Drive
 ------------------------
 
-You can disconnect ERDA as a network drive, and we recommend this if you share a computer with others.
+You can disconnect ERDA as a network drive, and we recommend this if you share a computer with others or simply if you believe that your connection will drop (if you close the lid on a laptop, let a computer enter sleep-mode etc.) as you will receive a friendly mail telling you about this, which can be disruptive.
 
-Right click on the drive, and click on 'Eject "io.erda.dk"'.
+Right click on the drive, and click on 'Eject "io.erda.dk"'. If it complains about being in use, you can drag it to the trashbin, where it will disconnect.
 
