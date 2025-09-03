@@ -4,7 +4,7 @@
 Efficient Data Access
 =====================
 
-As a SIF user, you can work locally on your cmoputer with your SIF files by connecting SIF as a network drive for efficient and transparently integrated file access through different interfaces.
+As a SIF user, you can work locally on your computer with your SIF files by connecting SIF as a network drive for efficient and transparently integrated file access through different interfaces.
 
 
 These interfaces allow you to transfer many or big files more efficiently and to map your individual SIF project files and folders on your local PC or workstation.

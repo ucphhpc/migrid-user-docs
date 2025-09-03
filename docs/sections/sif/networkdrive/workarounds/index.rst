@@ -5,7 +5,7 @@ Workarounds
 Sometimes we need to introduce a workaround either due to limitations in our own systems, or due to how something works at the KU level. Such workarounds are (for now) placed here.
 
 
-SOCK5 connection to SIF
+SOCKS5 connection to SIF
 =======================
 
 This workaround can sometimes be necessary if you cannot get 2FA to work on your remote KU server.
