@@ -6,7 +6,7 @@ Sometimes we need to introduce a workaround either due to limitations in our own
 
 
 SOCKS5 connection to SIF
-=======================
+========================
 
 This workaround can sometimes be necessary if you cannot get 2FA to work on your remote KU server.
 Based on `https://linuxize.com/post/how-to-setup-ssh-socks-tunnel-for-private-browsing <https://linuxize.com/post/how-to-setup-ssh-socks-tunnel-for-private-browsing>`_.
