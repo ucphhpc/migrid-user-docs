@@ -6,7 +6,7 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = "ERDA & SIF support"
-copyright = "2023 SCIENCE HPC Center Support Team"
+copyright = "2025 SCIENCE HPC Center Support Team"
 author = "SCIENCE HPC Center Support Team"
 
 
